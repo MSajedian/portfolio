@@ -19,6 +19,11 @@ export default function Home() {
 
                     <p>“DO WHAT YOU LOVE LOVE WHAT YOU DO” / “EVER POSITIVE NEVER NEGATIVE”</p>
                 </Col>
+                <Col>
+                    <div className="text-center">
+                        <img src="../assets/images/hi.png" alt="hi" className="home-image-1" />
+                    </div>
+                </Col>
             </Row>
         </Container>
     )
