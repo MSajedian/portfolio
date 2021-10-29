@@ -29,7 +29,9 @@ export default function Home() {
                     <p>I am Mohammadamin Sajedian</p>
                     <p>FullStack Web Developer</p>
 
-                    <p>“DO WHAT YOU LOVE LOVE WHAT YOU DO” / “EVER POSITIVE NEVER NEGATIVE”</p>
+                    <p>“DO WHAT YOU LOVE LOVE WHAT YOU DO” / </p>
+                    <p>“EVER POSITIVE NEVER NEGATIVE”</p>
+                    <p>“Learn from BIRTH to DEATH”</p>
                 </Col>
                 <Col lg={6}>
                     <div className="text-center image-container">
