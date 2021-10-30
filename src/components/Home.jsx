@@ -27,7 +27,7 @@ export default function Home() {
 
                     <p>Hi,</p>
                     <p>I am Mohammadamin Sajedian</p>
-                    <p>FullStack Web Developer</p>
+                    <p>MERN FullStack Web Developer</p>
 
                     <p>“DO WHAT YOU LOVE LOVE WHAT YOU DO” / </p>
                     <p>“EVER POSITIVE NEVER NEGATIVE”</p>
