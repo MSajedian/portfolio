@@ -15,17 +15,26 @@ export default function Home() {
     }
 
     return (
-        <Container className="home-container pt-5" onMouseMove={(event) => handleMouseMove(event)}>
+        <Container className="home-container" onMouseMove={(event) => handleMouseMove(event)}>
+            <h2>Home</h2>
             <Row>
-                <Col lg={6} className="align-self-center">
-                    <div className="text-center justify-content-center align-items-center ">
-                        <p>Hi,</p>
-                        <p>I am Mohammadamin Sajedian</p>
-                        <p>FullStack Web Developer</p>
-                    </div>
+                <Col lg={6}>
+                    <p>contact icons in Each page</p>
+
+                    <p>Images:</p>
+                    <p>Digital images and 0 1</p>
+                    <p>Movable image</p>
+
+                    <p>Hi,</p>
+                    <p>I am Mohammadamin Sajedian</p>
+                    <p>FullStack Web Developer</p>
+
+                    <p>“DO WHAT YOU LOVE LOVE WHAT YOU DO” / </p>
+                    <p>“EVER POSITIVE NEVER NEGATIVE”</p>
+                    <p>“Learn from BIRTH to DEATH”</p>
                 </Col>
-                <Col lg={6} className="align-self-center">
-                    <div className="text-center image-container justify-content-center align-items-center">
+                <Col lg={6}>
+                    <div className="text-center image-container">
                         <img src="../assets/images/hi.png" alt="hi" className="home-image-1" />
                         <div className="eyes">
                             <div className="eye">
