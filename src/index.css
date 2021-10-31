@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgrey;
 }
 
 code {
@@ -36,7 +37,7 @@ code {
   left: 17.4rem; */
   /* width: 17rem; */
   top: 39%;
-  left: 35%;
+  left: 33.4%;
   width: 40%;
   background-color: transparent;
   transform: rotate(10deg);
