@@ -17,10 +17,10 @@ export default function Home() {
     return (
         <Container className="home-container pt-5" onMouseMove={(event) => handleMouseMove(event)}>
             <Row>
-                <Col lg={6} className="align-self-center">
+                <Col lg={6} className="align-self-center fs-2" >
                     <div className="text-center justify-content-center align-items-center ">
-                        <p>Hi,</p>
-                        <p>I am Mohammadamin Sajedian</p>
+                        <p>Hi, I am</p>
+                        <p className="fw-bold">Mohammadamin Sajedian</p>
                         <p>FullStack Web Developer</p>
                     </div>
                 </Col>

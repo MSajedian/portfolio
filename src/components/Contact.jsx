@@ -4,11 +4,14 @@ import { Col, Container, Form, Row, Button } from 'react-bootstrap'
 export default function Contact() {
     return (
         <Container>
-            <h2>Contact</h2>
-            <p><a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">linkedin</a></p>
-            <p>Email: <a href="mailto:mohammadsajedian@gmail.com">mohammadsajedian@gmail.com</a>
-            </p>
-            <p>Location: United Kingdom, London</p>
+            <Row className="mt-5">
+                <Col>
+                    <p>Email: <a href="mailto:mohammadsajedian@gmail.com">mohammadsajedian@gmail.com</a>
+                        <p><a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">linkedin</a></p>
+                    </p>
+                    <p>Location: United Kingdom, London</p>
+                </Col>
+            </Row>
             <Form>
                 <Row>
                     <Col>
@@ -33,7 +36,7 @@ export default function Contact() {
                 </Row>
 
                 <div className="d-flex align-items-end">
-                    <Button variant="primary" type="submit" > Send Email </Button>
+                    <Button variant="primary" type="submit"> Send Email </Button>
                 </div>
             </Form>
         </Container >
