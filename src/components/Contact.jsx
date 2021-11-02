@@ -6,9 +6,8 @@ export default function Contact() {
         <Container>
             <Row className="mt-5">
                 <Col>
-                    <p>Email: <a href="mailto:mohammadsajedian@gmail.com">mohammadsajedian@gmail.com</a>
-                        <p><a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">linkedin</a></p>
-                    </p>
+                    <p>Email: <a href="mailto:mohammadsajedian@gmail.com">mohammadsajedian@gmail.com</a></p>
+                    <p>Linkedin: <a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></p>
                     <p>Location: United Kingdom, London</p>
                 </Col>
             </Row>
@@ -17,7 +16,7 @@ export default function Contact() {
                     <Col>
                         <Form.Group className="mb-3" controlId="formName">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="name" />
+                            <Form.Control type="text" placeholder="Name" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formEmail">
                             <Form.Label>Email address</Form.Label>
