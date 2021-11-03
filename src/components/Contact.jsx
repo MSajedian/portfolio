@@ -10,21 +10,35 @@ export default function Contact() {
     const [name, setName] = useState("");
     const [emailAddress, setEmailAddress] = useState("");
     const [message, setMessage] = useState("");
+    const [sendEmailText, setSendEmailText] = useState("Send Email");
+    const [sendEmailStyle, setSendEmailStyle] = useState("dark");
 
     const handleSendEmail = async (event) => {
         event.preventDefault();
         event.stopPropagation();
         try {
             fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ name, emailAddress, message }) // body data type must match "Content-Type" header
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, emailAddress, message }) // body data type must match "Content-Type" header
             })
-              .then(res => (res.json()))
-          } catch (error) {
+                .then(res => {
+                    if (res.ok) {
+                        setSendEmailText("Email Sent")
+                        setSendEmailStyle("success")
+                        setTimeout(function () {
+                            setSendEmailText("Send Email")
+                            setSendEmailStyle("dark")
+                        }, 3000)
+                    } else {
+                        setSendEmailText("Please try again later")
+                        setSendEmailStyle("warning")
+                    }
+                })
+        } catch (error) {
             console.log('error:', error)
-          }
-        };
+        }
+    };
 
     return (
         <Container className="pt-3">
@@ -81,7 +95,7 @@ export default function Contact() {
                         </Col>
                     </Row>
                     <div className="d-flex justify-content-end">
-                        <Button variant="dark" type="submit" onClick={handleSendEmail}> Send Email </Button>
+                        <Button variant={sendEmailStyle} type="submit" onClick={handleSendEmail}>{sendEmailText}</Button>
                     </div>
                 </Form>
             </Row >
