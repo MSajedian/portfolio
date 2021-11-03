@@ -3,9 +3,8 @@ import { Col, Container, Form, Row, Button } from 'react-bootstrap'
 import { FiMail } from 'react-icons/fi';
 import { GrLinkedin } from 'react-icons/gr';
 import { MdLocationPin } from 'react-icons/md';
-import sgMail from '@sendgrid/mail'
 
-sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY)
+const BackendURL = process.env.REACT_APP_BACKEND_CLOUD_URL || process.env.REACT_APP_BACKEND_LOCAL_URL
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -15,21 +14,18 @@ export default function Contact() {
     const handleSendEmail = async (event) => {
         event.preventDefault();
         event.stopPropagation();
-        // Prepare an Email
-        const msg1 = {
-            to: 'mohammadsajedian@gmail.com',
-            from: 'mohammadsajedian@gmail.com',
-            subject: `${name} with ${emailAddress} email address from mohammad.vercel.app`,
-            text: `${message}`,
-            html: `<div>${message}</div>`,
-        };
-        // Send Email
         try {
-            await sgMail.send(msg1);
-        } catch (error) {
-            console.log(error);
-        }
-    }
+            fetch(`${BackendURL}/users/sendemailfrommohammadvercelapp`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name, emailAddress, message }) // body data type must match "Content-Type" header
+            })
+              .then(res => (res.json()))
+          } catch (error) {
+            console.log('error:', error)
+          }
+        };
+
     return (
         <Container className="pt-3">
             <div className="fs-1 fw-bold">Contact me</div>
