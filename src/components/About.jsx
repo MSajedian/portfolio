@@ -11,7 +11,7 @@ export default function About() {
                         <Button href="../assets/static/mohammadamin_sajedian_cv.docx" variant="outline-dark" className="shadow">Download CV</Button>
                     </div>
                     <hr />
-                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm from Shiraz, Iran, living in London.
+                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm originally from Shiraz, Iran, living in London.
                         I have a masters degree in eletrical and electronic engineering and was working as an eletrical engineer.
                         I have always been interested in coding so from March 2021, I took part in full stack web developer course to pursue my dreams of becoming a full stack web developer.
                     </p>
@@ -99,37 +99,79 @@ export default function About() {
                         </Tab>
                         <Tab eventKey="experience" title="Experience">
                             <Table striped bordered hover>
-                                <thead>
+                                <thead className="text-center">
                                     <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Title</th>
+                                        <th>Company name</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td>July 2020</td>
+                                        <td>Feb 2021</td>
+                                        <td>Pizza Maker Volunteer</td>
+                                        <td>Pizza Rush</td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
+                                        <td>Nov 2018</td>
+                                        <td>Dec 2019</td>
+                                        <td>Electrical Installation Supervisor</td>
+                                        <td>HASEB FARS Company in Iran</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td colSpan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
+                                        <td>Dec 2014</td>
+                                        <td>Nov 2018</td>
+                                        <td>Electrical Installation Supervisor</td>
+                                        <td>TADBIR & TOWSE Company in Iran</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jan 2012</td>
+                                        <td>Dec 2014</td>
+                                        <td>Office Manager</td>
+                                        <td>TADBIR & TOWSE Company in Iran</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feb 2009</td>
+                                        <td>Jan 2012</td>
+                                        <td>Layout Designer</td>
+                                        <td>Literature Journal of Islamic Azad University, Fasa Branch in Iran</td>
                                     </tr>
                                 </tbody>
                             </Table>
                         </Tab>
                         <Tab eventKey="education" title="Education">
-                            Education
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Start & End Date</th>
+                                        <th>Institution</th>
+                                        <th>Modules included</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>MERN Full Stack Developer</td>
+                                        <td>Mar 2021 – Oct 2021</td>
+                                        <td>Strive School</td>
+                                        <td>HTML, CSS, JavaScript, Git, GitHub, VSCode, UX, UI, Bootstrap, ES6, Promises, AJAX, npm, REST, ReactJS, NodeJS, ExpressJS, TypeScript, Hooks, Redux, Thunk, Middlewares, SQL, Postgres, Sequelize, NoSQL, Mongo, Mongoose ...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Master's degree in Electrical Engineering</td>
+                                        <td>2013 – 2016</td>
+                                        <td>Islamic Azad University, Fasa Branch in Iran</td>
+                                        <td>Linear Integrated Circuits Design, Semiconductor Devices, Theory & Fabrication Technology of Semiconductor Devices, Quantum Electronics, ...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bachelor's degree in Electrical Engineering</td>
+                                        <td>2007 – 2012</td>
+                                        <td>Islamic Azad University, Fasa Branch in Iran</td>
+                                        <td>Electric Circuits, Industrial Electronics, Technical Drawing, Logic Circuits, Microprocessors, Computer Architecture, Computer Programming, Industrial Controllers, Linear Control Systems, ...</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
                         </Tab>
                     </Tabs>
                 </Col>
