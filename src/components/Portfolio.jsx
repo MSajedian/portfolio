@@ -4,10 +4,11 @@ import { IoIosApps } from 'react-icons/io';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { HiCode } from 'react-icons/hi';
 
-export default function Projects() {
+export default function Portfolio() {
     return (
-        <Container className="pt-5">
-            <Row xs={1} md={2} className="g-4">
+        <Container className="pt-3">
+            <div className="fs-1 fw-bold">Portfolio</div>
+            <Row xs={1} md={2} className="g-4 mt-4">
                 <Col>
                     <Card className="text-center mb-4 shadow-lg">
                         <Card.Img variant="top" src="../assets/images/topedu.jpg" />

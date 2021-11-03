@@ -8,7 +8,7 @@ import {
 import MainNavbar from './components/MainNavbar'
 import Home from './components/Home'
 import About from './components/About'
-import Projects from './components/Projects'
+import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 
 export default function App() {
@@ -22,8 +22,8 @@ export default function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/projects">
-          <Projects />
+        <Route path="/portfolio">
+          <Portfolio />
         </Route>
         <Route path="/contact">
           <Contact />

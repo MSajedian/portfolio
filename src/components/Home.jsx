@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     const [pupilTop, setPupilTop] = useState("50%");
@@ -16,12 +17,13 @@ export default function Home() {
 
     return (
         <Container className="home-container pt-5" onMouseMove={(event) => handleMouseMove(event)}>
-            <Row>
+            <Row className="mt-5">
                 <Col lg={6} className="align-self-center fs-2" >
                     <div className="text-center justify-content-center align-items-center ">
                         <p>Hi, I am</p>
                         <p className="fw-bold">Mohammadamin Sajedian</p>
-                        <p>FullStack Web Developer</p>
+                        <p>Full Stack Web Developer</p>
+                        <Link to="/about" className="mt-4 fs-5 btn btn-outline-dark shadow">More About Me</Link>
                     </div>
                 </Col>
                 <Col lg={6} className="align-self-center">
