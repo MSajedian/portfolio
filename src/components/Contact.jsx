@@ -15,7 +15,7 @@ export default function Contact() {
         event.preventDefault();
         event.stopPropagation();
         try {
-            fetch(`${BackendURL}/users/sendemailfrommohammadvercelapp`, {
+            fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ name, emailAddress, message }) // body data type must match "Content-Type" header
