@@ -1,10 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Form, Row, Button } from 'react-bootstrap'
 import { FiMail } from 'react-icons/fi';
 import { GrLinkedin } from 'react-icons/gr';
 import { MdLocationPin } from 'react-icons/md';
+import sgMail from '@sendgrid/mail'
+
+sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY)
 
 export default function Contact() {
+    const [name, setName] = useState("");
+    const [emailAddress, setEmailAddress] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleSendEmail = async (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        // Prepare an Email
+        const msg1 = {
+            to: 'mohammadsajedian@gmail.com',
+            from: 'mohammadsajedian@gmail.com',
+            subject: `${name} with ${emailAddress} email address from mohammad.vercel.app`,
+            text: `${message}`,
+            html: `<div>${message}</div>`,
+        };
+        // Send Email
+        try {
+            await sgMail.send(msg1);
+        } catch (error) {
+            console.log(error);
+        }
+    }
     return (
         <Container className="pt-3">
             <div className="fs-1 fw-bold">Contact me</div>
@@ -35,18 +60,18 @@ export default function Contact() {
                     {/* <div>Location: London, United Kingdom </div> */}
                 </Col>
             </Row>
-            <Row className="mt-5">
+            <Row className="my-5">
                 <div className="fs-1">Send me an email</div>
                 <Form>
                     <Row>
                         <Col>
                             <Form.Group className="mb-3" controlId="formName">
                                 <Form.Label>Name</Form.Label>
-                                <Form.Control type="text" placeholder="Name" />
+                                <Form.Control type="text" placeholder="Name" onChange={(e) => (setName(e.target.value))} />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formEmail">
                                 <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Control type="email" placeholder="Enter email" onChange={(e) => (setEmailAddress(e.target.value))} />
                                 {/* <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text> */}
@@ -55,12 +80,12 @@ export default function Contact() {
                         <Col>
                             <Form.Group className="mb-3" controlId="formTextarea">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows={5} />
+                                <Form.Control as="textarea" rows={5} onChange={(e) => (setMessage(e.target.value))} />
                             </Form.Group>
                         </Col>
                     </Row>
                     <div className="d-flex justify-content-end">
-                        <Button variant="dark" type="submit"> Send Email </Button>
+                        <Button variant="dark" type="submit" onClick={handleSendEmail}> Send Email </Button>
                     </div>
                 </Form>
             </Row >
