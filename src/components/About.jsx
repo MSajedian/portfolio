@@ -199,18 +199,6 @@ export default function About() {
                             </Col>
                         </Row>
                     </Tab.Container>
-                    {/* <Tabs defaultActiveKey="skills" id="uncontrolled-tab-example" className="mb-4">
-                        <Tab eventKey="skills" title="Skills">
-                            
-
-                        </Tab>
-                        <Tab eventKey="experience" title="Experience">
-                            
-                        </Tab>
-                        <Tab eventKey="education" title="Education">
-                            
-                        </Tab>
-                    </Tabs> */}
                 </Col>
             </Row>
         </Container>

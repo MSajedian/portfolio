@@ -25,6 +25,7 @@ code {
 .customNavLink:focus,
 .customNavLink:hover {
   color: #0d6efd;
+  cursor: pointer;
 }
 
 .customNavLink.active {
