@@ -17,11 +17,13 @@ export default function Portfolio() {
                             <Card.Subtitle className="mb-2 text-muted">Learning Management System</Card.Subtitle>
                             <div><b><IoIosApps /> Tech:</b> ReactJS, Redux, CSS, ExpressJS, NodeJS, MongoDB</div>
                             <div><b><HiCode /> Codes:</b>{' '}
-                                <a href="https://github.com/MSajedian/Topedu-Reactjs" target="_blank" rel="noreferrer">Topedu-Reactjs</a>{' '}
-                                <a href="https://github.com/MSajedian/Topedu-Expressjs" target="_blank" rel="noreferrer">Topedu-Expressjs</a>
+                                <a href="https://github.com/MSajedian/Topedu-Reactjs" target="_blank" rel="noreferrer">Topedu-Reactjs</a> / <a href="https://github.com/MSajedian/Topedu-Expressjs" target="_blank" rel="noreferrer">Topedu-Expressjs</a>
                             </div>
                             <div><b><HiOutlineExternalLink /> Demo:</b>{' '}
                                 <a href="https://topedu.vercel.app/" target="_blank" rel="noreferrer">TopEdu</a>
+                            </div>
+                            <div><b><HiOutlineExternalLink /> About the TopEdu:</b>{' '}
+                                <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
                             </div>
                         </Card.Body>
                     </Card>
