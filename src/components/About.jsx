@@ -168,7 +168,8 @@ export default function About() {
                                             <thead>
                                                 <tr>
                                                     <th>Title</th>
-                                                    <th>Start & End Date</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
                                                     <th>Institution</th>
                                                     <th>Modules included</th>
                                                 </tr>
@@ -176,19 +177,22 @@ export default function About() {
                                             <tbody>
                                                 <tr>
                                                     <td>MERN Full Stack Developer</td>
-                                                    <td>Mar 2021 – Oct 2021</td>
+                                                    <td>Mar 2021</td>
+                                                    <td>Oct 2021</td>
                                                     <td>Strive School</td>
                                                     <td>HTML, CSS, JavaScript, Git, GitHub, VSCode, UX, UI, Bootstrap, ES6, Promises, AJAX, npm, REST, ReactJS, NodeJS, ExpressJS, TypeScript, Hooks, Redux, Thunk, Middlewares, SQL, Postgres, Sequelize, NoSQL, Mongo, Mongoose ...</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Master's degree in Electrical Engineering</td>
-                                                    <td>2013 – 2016</td>
+                                                    <td>2013</td>
+                                                    <td>2016</td>
                                                     <td>Islamic Azad University, Fasa Branch in Iran</td>
                                                     <td>Linear Integrated Circuits Design, Semiconductor Devices, Theory & Fabrication Technology of Semiconductor Devices, Quantum Electronics, ...</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Bachelor's degree in Electrical Engineering</td>
-                                                    <td>2007 – 2012</td>
+                                                    <td>2007</td>
+                                                    <td>2012</td>
                                                     <td>Islamic Azad University, Fasa Branch in Iran</td>
                                                     <td>Electric Circuits, Industrial Electronics, Technical Drawing, Logic Circuits, Microprocessors, Computer Architecture, Computer Programming, Industrial Controllers, Linear Control Systems, ...</td>
                                                 </tr>
