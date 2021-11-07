@@ -1,22 +1,24 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-    const [pupilTop, setPupilTop] = useState("50%");
-    const [pupilLeft, setPupilLeft] = useState("50%");
-    const [pupilTransform, setPupilTransform] = useState("translate(-50%, -50%)");
+    // const [pupilTop, setPupilTop] = useState("50%");
+    // const [pupilLeft, setPupilLeft] = useState("50%");
+    // const [pupilTransform, setPupilTransform] = useState("translate(-50%, -50%)");
 
-    function handleMouseMove(event) {
-        let x = (event.clientX * 100) / window.innerWidth + "%";
-        let y = (event.clientY * 100) / window.innerHeight + "%";
-        setPupilLeft(x);
-        setPupilTop(y);
-        setPupilTransform(`translate(-${x},-${y})`);
-    }
+    // function handleMouseMove(event) {
+    //     let x = (event.clientX * 100) / window.innerWidth + "%";
+    //     let y = (event.clientY * 100) / window.innerHeight + "%";
+    //     setPupilLeft(x);
+    //     setPupilTop(y);
+    //     setPupilTransform(`translate(-${x},-${y})`);
+    // }
 
     return (
-        <Container className="home-container pt-4" onMouseMove={(event) => handleMouseMove(event)}>
+        <Container className="home-container pt-4" 
+        // onMouseMove={(event) => handleMouseMove(event)}
+        >
             <Row className="mt-5">
                 <Col lg={6} className="align-self-center fs-2" >
                     <div className="text-center justify-content-center align-items-center ">
@@ -29,7 +31,7 @@ export default function Home() {
                 <Col lg={6} className="align-self-center">
                     <div className="text-center image-container justify-content-center align-items-center">
                         <img src="../assets/images/hi.png" alt="hi" className="home-image-1" />
-                        <div className="eyes">
+                        {/* <div className="eyes">
                             <div className="eye">
                                 <div
                                     className="pupil"
@@ -51,7 +53,7 @@ export default function Home() {
                                     }}
                                 ></div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </Col>
             </Row>
