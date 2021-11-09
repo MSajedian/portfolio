@@ -3,10 +3,10 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { HiCode, HiOutlineExternalLink } from 'react-icons/hi';
 import { IoIosApps } from 'react-icons/io';
 
-export default function Portfolio() {
+export default function Projects() {
     return (
         <Container className="pt-3">
-            <div className="fs-1 fw-bold">Portfolio</div>
+            <div className="fs-1 fw-bold">Projects</div>
             <Row xs={1} md={2} className="g-4 mt-4">
                 <Col>
                     <Card className="text-center mb-4 shadow-lg">

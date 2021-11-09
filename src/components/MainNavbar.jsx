@@ -17,7 +17,7 @@ export default function MainNavbar() {
                             {/* <Nav.Link href="/">Home</Nav.Link> */}
                             <Link to="/about" className="nav-link fs-5">About</Link>
                             {/* <Nav.Link href="/about">About</Nav.Link> */}
-                            <Link to="/portfolio" className="nav-link fs-5">Portfolio</Link>
+                            <Link to="/projects" className="nav-link fs-5">Projects</Link>
                             <Link to="/contact" className="nav-link fs-5">Contact</Link>
                             {/* <Button className="" variant="dark" onClick={() => (history.push("/contact"))}>Contact</Button> */}
 
