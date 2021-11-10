@@ -14,16 +14,16 @@ export default function Projects() {
                         <Card.Body>
                             <Card.Title>TopEdu</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">Learning Management System</Card.Subtitle>
-                            <div><b><HiOutlineExternalLink /> Demo:</b>{' '}
+                            <div><b><HiOutlineExternalLink className="mb-1" /> Demo:</b>{' '}
                                 <a href="https://topedu.vercel.app/" target="_blank" rel="noreferrer">TopEdu</a>
                             </div>
-                            <div><b><BsInfoCircle /> About the TopEdu:</b>{' '}
+                            <div><b><BsInfoCircle className="mb-1"/> About the TopEdu:</b>{' '}
                                 <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
                             </div>
-                            <div><b><HiCode /> Codes:</b>{' '}
+                            <div><b><HiCode className="mb-1"/> Codes:</b>{' '}
                                 <a href="https://github.com/MSajedian/Topedu-Reactjs" target="_blank" rel="noreferrer">Topedu-Reactjs</a> / <a href="https://github.com/MSajedian/Topedu-Expressjs" target="_blank" rel="noreferrer">Topedu-Expressjs</a>
                             </div>
-                            <div><b><IoIosApps /> Tech:</b> ReactJS, Redux, CSS, ExpressJS, NodeJS, MongoDB</div>
+                            <div><b><IoIosApps className="mb-1"/> Tech:</b> ReactJS, Redux, CSS, ExpressJS, NodeJS, MongoDB</div>
                         </Card.Body>
                     </Card>
                 </Col>

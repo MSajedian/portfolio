@@ -29,7 +29,7 @@ export default function MainNavbar() {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown> */}
-                            <Nav.Link className="fs-4" href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank"><GrLinkedin /></Nav.Link>
+                            <Nav.Link className="fs-4" href="https://www.linkedin.com/in/mohammadamin-sajedian" target="_blank"><GrLinkedin /></Nav.Link>
                             <Nav.Link className="fs-4" href="https://github.com/MSajedian" target="_blank"><ImGithub /></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
