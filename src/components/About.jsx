@@ -11,7 +11,7 @@ export default function About() {
                         <Button href="../assets/static/mohammadamin_sajedian_cv.docx" variant="outline-dark" className="shadow">Download CV</Button>
                     </div>
                     <hr />
-                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm originally from Shiraz, Iran, living in London.
+                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a masters degree in eletrical and electronic engineering and was working as an eletrical engineer.
                         I have always been interested in coding so from March 2021, I took part in full stack web developer course to pursue my dreams of becoming a full stack web developer.
                     </p>
