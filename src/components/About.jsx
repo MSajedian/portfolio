@@ -44,8 +44,9 @@ export default function About() {
                             <Col>
                                 <Tab.Content className="mt-4">
                                     <Tab.Pane eventKey="skills">
-                                        <Container 
-                                        // className="border pt-4 border-success rounded shadow"
+                                        <Container
+                                            // className="border pt-4 border-success rounded shadow"
+                                            className="border border-success pt-4 rounded shadow"
                                         >
                                             <Row>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
@@ -232,8 +233,8 @@ export default function About() {
                                         </Container>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="experience">
-                                        <Table striped bordered hover>
-                                            <thead className="text-center">
+                                        <Table striped bordered className="shadow text-center" >
+                                            <thead>
                                                 <tr>
                                                     <th>Start Date</th>
                                                     <th>End Date</th>
@@ -276,7 +277,7 @@ export default function About() {
                                         </Table>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="education">
-                                        <Table striped bordered hover>
+                                        <Table striped bordered className="shadow text-center">
                                             <thead>
                                                 <tr>
                                                     <th>Title</th>
