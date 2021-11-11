@@ -69,7 +69,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">CSS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p70" >
+                                                    <div class="c100 p75" >
                                                         <span><img style={{ width: "50%" }} src="../assets/images/javascript.png" alt="JavaScript" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -79,7 +79,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">JavaScript</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p75" >
+                                                    <div class="c100 p70" >
                                                         <span><img style={{ width: "100%" }} src="../assets/images/react.png" alt="React" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -89,7 +89,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">React</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p50" >
+                                                    <div class="c100 p55" >
                                                         <span><img style={{ width: "80%" }} src="../assets/images/nodejs.png" alt="NodeJS" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -109,7 +109,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">ExpressJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p50" >
+                                                    <div class="c100 p45" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/mongodb.png" alt="MongoDB" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -117,16 +117,6 @@ export default function About() {
                                                         </div>
                                                     </div>
                                                     <h6 class="open-sans-font text-center">MongoDB</h6>
-                                                </Col>
-                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p80" >
-                                                        <span><img style={{ width: "75%" }} src="../assets/images/react-bootstrap.png" alt="React Bootstrap" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
-                                                        </div>
-                                                    </div>
-                                                    <h6 class="open-sans-font text-center">React Bootstrap</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div class="c100 p45" >
@@ -139,6 +129,16 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">MongooseJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
+                                                    <div class="c100 p80" >
+                                                        <span><img style={{ width: "75%" }} src="../assets/images/react-bootstrap.png" alt="React Bootstrap" /></span>
+                                                        <div class="slice">
+                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="open-sans-font text-center">React Bootstrap</h6>
+                                                </Col>
+                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div class="c100 p40" >
                                                         <span><img style={{ width: "75%" }} src="../assets/images/postgresql.png" alt="PostgreSQL" /></span>
                                                         <div class="slice">
@@ -149,7 +149,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">PostgreSQL</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div class="c100 p35" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/typescript.png" alt="TypeScript" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -159,7 +159,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">TypeScript</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div class="c100 p45" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/redux.png" alt="Redux" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -169,7 +169,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">Redux</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div class="c100 p70" >
                                                         <span><img style={{ width: "75%" }} src="../assets/images/bootstrap.png" alt="Bootstrap" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -179,7 +179,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">Bootstrap</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div class="c100 p65" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/git.png" alt="Git" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -189,7 +189,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">Git</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div class="c100 p45" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/restapi.png" alt="REST API" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -199,7 +199,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">REST API</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div class="c100 p35" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/jest.png" alt="Jest" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -219,7 +219,7 @@ export default function About() {
                                                     <h6 class="open-sans-font text-center">CI-CD</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p20" >
+                                                    <div class="c100 p30" >
                                                         <span><img style={{ width: "60%" }} src="../assets/images/data-structure.png" alt="Data Structure" /></span>
                                                         <div class="slice">
                                                             <div class="bar" style={{ borderColor: "darkgreen" }}></div>
@@ -228,17 +228,6 @@ export default function About() {
                                                     </div>
                                                     <h6 class="open-sans-font text-center">Data Structure</h6>
                                                 </Col>
-                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p20" >
-                                                        <span><img style={{ width: "75%" }} src="../assets/images/ux-ui-design.png" alt="UX-UI Design" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
-                                                        </div>
-                                                    </div>
-                                                    <h6 class="open-sans-font text-center">UX-UI Design</h6>
-                                                </Col>
-
                                             </Row>
                                         </Container>
                                     </Tab.Pane>
