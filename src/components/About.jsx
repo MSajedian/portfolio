@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Nav, Tab, Button, Table } from 'react-bootstrap'
+import { Container, Row, Col, Nav, Tab, Button, Table, Image } from 'react-bootstrap'
 
 export default function About() {
     return (
@@ -8,14 +8,14 @@ export default function About() {
                 <Col lg={6} md={6} className="mb-5">
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="fs-1 fw-bold">About me</div>
-                        <Button href="../assets/static/mohammadamin_sajedian_cv.docx" variant="outline-dark" className="shadow">Download CV</Button>
+                        <Button href="https://drive.google.com/file/d/1d8cW4WhXov6nmRKyd4XkFyOAlaT59r4z/view" variant="outline-dark" className="shadow" target="_blank">Download CV</Button>
                     </div>
                     <hr />
                     <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a masters degree in eletrical and electronic engineering and was working as an eletrical engineer.
                         I have always been interested in coding so from March 2021, I took part in full stack web developer course to pursue my dreams of becoming a full stack web developer.
                     </p>
-                    <img src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" />
+                    <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
                 </Col>
                 <Col lg={6} md={6} className="mb-5 mt-2">
                     <Tab.Container id="tabs" defaultActiveKey="skills" className="">
@@ -46,7 +46,7 @@ export default function About() {
                                     <Tab.Pane eventKey="skills">
                                         <Container
                                             // className="border pt-4 border-success rounded shadow"
-                                            className="border border-success pt-4 rounded shadow"
+                                            className="border pt-4 rounded shadow"
                                         >
                                             <Row>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
