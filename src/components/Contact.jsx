@@ -45,10 +45,10 @@ export default function Contact() {
             <div className="fs-1 fw-bold">Contact me</div>
             <Row className="mt-5">
                 <Col>
-                    <div className="contact-card bg-dark text-white rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4 " >
+                    <div className="contact-card bg-dark text-white rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4" >
                         <div className="fs-1"><FiMail /></div>
                         <div className="fs-1">Email</div>
-                        <div><a href="mailto:mohammadsajedian@gmail.com" target="_blank" rel="noreferrer">mohammadsajedian@gmail.com</a></div>
+                        <div className="text-center"><a href="mailto:mohammadsajedian@gmail.com" target="_blank" rel="noreferrer">mohammadsajedian@gmail.com</a></div>
                     </div>
                     {/* <div><FiMail /> Email: <a href="mailto:mohammadsajedian@gmail.com">mohammadsajedian@gmail.com</a></div> */}
                 </Col>
@@ -56,7 +56,7 @@ export default function Contact() {
                     <div className="bg-dark text-white contact-card rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4" >
                         <div className="fs-1"><GrLinkedin /></div>
                         <div className="fs-1">Linkedin</div>
-                        <div><a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div>
+                        <div className="text-center"><a className="fs-4" href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div>
                     </div>
                     {/* <div>Linkedin: <a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div> */}
                 </Col>
@@ -64,8 +64,7 @@ export default function Contact() {
                     <div className="bg-dark text-white contact-card rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4" >
                         <div className="fs-1"><MdLocationPin /></div>
                         <div className="fs-1">Location</div>
-                        <div>London,</div>
-                        <div>United Kingdom</div>
+                        <div className="text-center"><a className="fs-5" href="https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862" target="_blank" rel="noreferrer">London,<br/> United Kingdom</a></div>
                     </div>
                     {/* <div>Location: London, United Kingdom </div> */}
                 </Col>
