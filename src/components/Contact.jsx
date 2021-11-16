@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Col, Container, Form, Row, Button } from 'react-bootstrap'
 import { FiMail } from 'react-icons/fi';
 import { GrLinkedin } from 'react-icons/gr';
@@ -39,6 +39,22 @@ export default function Contact() {
             console.log('error:', error)
         }
     };
+
+     // ******** Check Connection between Frontend and Backend ************
+     function checkConnection() {
+        try {
+            fetch(BackendURL + "/users/checkconnection", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+            })
+                .then(res => { if (res.status !== 200) { console.log('error connection to the backend') } })
+        } catch (error) { console.log('error:', error) }
+    }
+
+    useEffect(() => {
+        checkConnection();
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <Container className="pt-3">

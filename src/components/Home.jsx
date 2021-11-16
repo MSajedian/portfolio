@@ -1,8 +1,5 @@
-import { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-
-const BackendURL = process.env.REACT_APP_BACKEND_CLOUD_URL || process.env.REACT_APP_BACKEND_LOCAL_URL
 
 export default function Home() {
     // const [pupilTop, setPupilTop] = useState("50%");
@@ -16,22 +13,6 @@ export default function Home() {
     //     setPupilTop(y);
     //     setPupilTransform(`translate(-${x},-${y})`);
     // }
-
-    // ******** Check Connection between Frontend and Backend ************
-    function checkConnection() {
-        try {
-            fetch(BackendURL + "/users/checkconnection", {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-            })
-                .then(res => { if (res.status !== 200) { console.log('error connection to the backend') } })
-        } catch (error) { console.log('error:', error) }
-    }
-
-    useEffect(() => {
-        checkConnection();
-        // eslint-disable-next-line
-    }, [])
 
     return (
         <Container className="home-container pt-4"
