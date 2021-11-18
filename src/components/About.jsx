@@ -247,31 +247,31 @@ export default function About() {
                                                     <td>July 2020</td>
                                                     <td>Feb 2021</td>
                                                     <td>Pizza Maker Volunteer</td>
-                                                    <td>Pizza Rush</td>
+                                                    <td>Pizza Rush, London, United Kingdom</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Nov 2018</td>
                                                     <td>Dec 2019</td>
                                                     <td>Electrical Installation Supervisor</td>
-                                                    <td>HASEB FARS Company in Iran</td>
+                                                    <td>HASEB FARS Company, Shiraz, Iran</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dec 2014</td>
                                                     <td>Nov 2018</td>
                                                     <td>Electrical Installation Supervisor</td>
-                                                    <td>TADBIR & TOWSE Company in Iran</td>
+                                                    <td>TADBIR & TOWSE Company, Shiraz, Iran</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Jan 2012</td>
                                                     <td>Dec 2014</td>
                                                     <td>Office Manager</td>
-                                                    <td>TADBIR & TOWSE Company in Iran</td>
+                                                    <td>TADBIR & TOWSE Company, Shiraz, Iran</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Feb 2009</td>
                                                     <td>Jan 2012</td>
                                                     <td>Layout Designer</td>
-                                                    <td>Literature Journal of Islamic Azad University, Fasa Branch in Iran</td>
+                                                    <td>Literature Journal of Islamic Azad University, Fasa, Iran</td>
                                                 </tr>
                                             </tbody>
                                         </Table>
