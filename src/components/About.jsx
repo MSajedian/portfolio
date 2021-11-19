@@ -12,10 +12,11 @@ export default function About() {
                     </div>
                     <hr />
                     <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
-                        I have a masters degree in eletrical and electronic engineering and was working as an eletrical engineer.
+                        I have a master's degree in eletrical engineering (Electronics) and was working as an eletrical engineer.
                         I have always been interested in coding so from March 2021, I took part in full stack web developer course to pursue my dreams of becoming a full stack web developer.
                     </p>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
+
                 </Col>
                 <Col lg={6} md={6} className="mb-5 mt-2">
                     <Tab.Container id="tabs" defaultActiveKey="skills" className="">

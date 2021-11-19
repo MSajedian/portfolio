@@ -12,6 +12,35 @@ code {
     monospace;
 }
 
+.quote {
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 10s;
+  animation-direction:alternate;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  /* animation-delay:; */
+  /* animation-fill-mode:; */
+  /* animation-play-state:; */
+}
+
+@keyframes mymove {
+  0%   {left:0%;}
+  50%  {left:50%;}
+  100% {left:0%;}
+}
+
+/* @keyframes mymove {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:200px; top:0px;}
+  75%  {background-color:green; left:100px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+
 .customNavLink {
   display: block;
   padding: 0.5rem 1rem;

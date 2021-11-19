@@ -18,6 +18,15 @@ export default function Home() {
         <Container className="home-container pt-4"
         // onMouseMove={(event) => handleMouseMove(event)}
         >
+            <Row>
+                <Col className="text-center">
+                    {/* <Alert variant='info' className="text-center"> */}
+                    <span className="quote1"><q>Seek knowledge from the Cradle to the Grave</q> - Prophet Muhammad</span>
+
+                    {/* </Alert> */}
+                </Col>
+            </Row>
+
             <Row className="mt-5">
                 <Col lg={6} className="align-self-center fs-2" >
                     <div className="text-center justify-content-center align-items-center ">
@@ -56,6 +65,7 @@ export default function Home() {
                     </div>
                 </Col>
             </Row>
+
         </Container>
     )
 }
