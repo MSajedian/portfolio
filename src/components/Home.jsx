@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -18,12 +18,42 @@ export default function Home() {
         <Container className="home-container pt-4"
         // onMouseMove={(event) => handleMouseMove(event)}
         >
+            {/* <Row>
+                <Col className="text-center">
+                    <span className="quote1"><q>Seek knowledge from the Cradle to the Grave</q> - Prophet Muhammad</span>
+                </Col>
+            </Row> */}
             <Row>
                 <Col className="text-center">
-                    {/* <Alert variant='info' className="text-center"> */}
-                    <span className="quote1"><q>Seek knowledge from the Cradle to the Grave</q> - Prophet Muhammad</span>
-
-                    {/* </Alert> */}
+                    <Carousel 
+                    className="bg-dark text-white"
+                    variant="dark" 
+                    // wrap={false} 
+                    controls={false} 
+                    indicators={false}
+                    >
+                        <Carousel.Item interval={3000}>
+                            <br />
+                            <h4><q>DO WHAT YOU LOVE - LOVE WHAT YOU DO</q></h4>
+                            <br />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <br />
+                            <h4><q>SEEK KNOWLEDGE FROM THE CRADLE TO THE GRAVE</q></h4>
+                            <br />
+                            {/* <p>Prophet Muhammad</p> */}
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000}>
+                            <br />
+                            <h4><q>EVER POSITIVE - NEVER NEGATIVE</q></h4>
+                            <br />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <br />
+                            <h4><q>YOUR ATTITUDE DETERMINES YOUR ALTITUDE</q></h4>
+                            <br />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
 
