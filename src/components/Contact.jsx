@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Col, Container, Form, Row, Button } from 'react-bootstrap'
 import { FiMail } from 'react-icons/fi';
 import { GrLinkedin } from 'react-icons/gr';
@@ -16,6 +16,8 @@ export default function Contact() {
     const handleSendEmail = async (event) => {
         event.preventDefault();
         event.stopPropagation();
+        setSendEmailText("Sending ...")
+        setSendEmailStyle("primary")
         try {
             fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
                 method: 'POST',
@@ -33,6 +35,10 @@ export default function Contact() {
                     } else {
                         setSendEmailText("Please try again later")
                         setSendEmailStyle("warning")
+                        setTimeout(function () {
+                            setSendEmailText("Send Email")
+                            setSendEmailStyle("dark")
+                        }, 3000)
                     }
                 })
         } catch (error) {
@@ -40,8 +46,8 @@ export default function Contact() {
         }
     };
 
-     // ******** Check Connection between Frontend and Backend ************
-     function checkConnection() {
+    // ******** Check Connection between Frontend and Backend ************
+    function checkConnection() {
         try {
             fetch(BackendURL + "/users/checkconnection", {
                 method: 'POST',
@@ -72,31 +78,31 @@ export default function Contact() {
                     <div className="bg-dark text-white contact-card rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4" >
                         <div className="fs-1"><GrLinkedin /></div>
                         <div className="fs-1">Linkedin</div>
-                        <div className="text-center"><a className="fs-4" href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div>
+                        <div className="text-center"><a className="fs-4" href="https://www.linkedin.com/in/mohammadamin-sajedian" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div>
                     </div>
-                    {/* <div>Linkedin: <a href="https://www.linkedin.com/in/mohammadamin-sajedian-6a001471" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div> */}
+                    {/* <div>Linkedin: <a href="https://www.linkedin.com/in/mohammadamin-sajedian" target="_blank" rel="noreferrer">Mohammadamin Sajedian</a></div> */}
                 </Col>
                 <Col>
                     <div className="bg-dark text-white contact-card rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4" >
                         <div className="fs-1"><MdLocationPin /></div>
                         <div className="fs-1">Location</div>
-                        <div className="text-center"><a className="fs-5" href="https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862" target="_blank" rel="noreferrer">London,<br/> United Kingdom</a></div>
+                        <div className="text-center"><a className="fs-5" href="https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862" target="_blank" rel="noreferrer">London,<br /> United Kingdom</a></div>
                     </div>
                     {/* <div>Location: London, United Kingdom </div> */}
                 </Col>
             </Row>
             <Row className="my-5">
                 <div className="fs-1">Send me an email</div>
-                <Form>
+                <Form onSubmit={handleSendEmail}>
                     <Row>
                         <Col>
                             <Form.Group className="mb-3" controlId="formName">
                                 <Form.Label>Name</Form.Label>
-                                <Form.Control type="text" placeholder="Name" onChange={(e) => (setName(e.target.value))} />
+                                <Form.Control type="text" placeholder="Name" onChange={(e) => (setName(e.target.value))} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formEmail">
                                 <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" onChange={(e) => (setEmailAddress(e.target.value))} />
+                                <Form.Control type="email" placeholder="Enter email" onChange={(e) => (setEmailAddress(e.target.value))} required />
                                 {/* <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text> */}
@@ -105,12 +111,12 @@ export default function Contact() {
                         <Col>
                             <Form.Group className="mb-3" controlId="formTextarea">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows={5} onChange={(e) => (setMessage(e.target.value))} />
+                                <Form.Control as="textarea" rows={5} onChange={(e) => (setMessage(e.target.value))} required />
                             </Form.Group>
                         </Col>
                     </Row>
                     <div className="d-flex justify-content-end">
-                        <Button variant={sendEmailStyle} type="submit" onClick={handleSendEmail}>{sendEmailText}</Button>
+                        <Button variant={sendEmailStyle} type="submit">{sendEmailText}</Button>
                     </div>
                 </Form>
             </Row >
