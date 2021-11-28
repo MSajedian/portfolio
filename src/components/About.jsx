@@ -19,7 +19,7 @@ export default function About() {
 
                 </Col>
                 <Col lg={6} md={6} className="mb-5 mt-2">
-                    <Tab.Container id="tabs" defaultActiveKey="skills" className="">
+                    <Tab.Container id="tabs" defaultActiveKey="skills" >
                         <Row>
                             <Col>
                                 <Nav className="flex-row">
@@ -44,10 +44,10 @@ export default function About() {
                         <Row>
                             <Col>
                                 <Tab.Content className="mt-4">
-                                    <Tab.Pane eventKey="skills">
+                                    <Tab.Pane eventKey="skills" >
                                         <Container
                                             // className="border pt-4 border-success rounded shadow"
-                                            className="border pt-4 rounded shadow"
+                                            className="border pt-4 rounded shadow customBackground"
                                         >
                                             <Row>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
@@ -234,7 +234,7 @@ export default function About() {
                                         </Container>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="experience">
-                                        <Table striped bordered className="shadow text-center" >
+                                        <Table striped bordered className="shadow text-center customBackground" >
                                             <thead>
                                                 <tr>
                                                     <th>Start Date</th>
@@ -278,7 +278,7 @@ export default function About() {
                                         </Table>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="education">
-                                        <Table striped bordered className="shadow text-center">
+                                        <Table striped bordered className="shadow text-center customBackground">
                                             <thead>
                                                 <tr>
                                                     <th>Title</th>

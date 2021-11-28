@@ -6,7 +6,12 @@ import { Link } from 'react-router-dom';
 export default function MainNavbar() {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="">
+            <Navbar collapseOnSelect 
+            bg="dark" 
+            expand="lg" 
+            variant="dark"
+            className="customNavBar"
+            >
                 <Container>
                     {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
                     <Link to="/" className="navbar-brand"><img src="my-emoji.png" alt="My Emoji" width="50" height="50" /></Link>
