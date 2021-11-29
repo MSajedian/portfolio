@@ -7,9 +7,9 @@ export default function MainNavbar() {
     return (
         <>
             <Navbar collapseOnSelect 
-            bg="dark" 
             expand="lg" 
-            variant="dark"
+            // bg="dark" 
+            // variant="light"
             className="customNavBar"
             >
                 <Container>

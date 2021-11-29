@@ -4,14 +4,60 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #b7e1e4;
-  /* color: white; */
-  /* background-color: #eeeeee; */
+  /* background-color: #b7e1e4; */
+  /* background-color: #000; */
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  
+
+
 }
 
-.customNavBar {
-  background-color: #5ab9c1;
+.gradient-border {
+  /* max-width: 50vw; */
+  --border-width: 3px;
+  font-family: Lato, sans-serif;
+  /* font-size: 2.5rem; */
+  text-transform: uppercase;
+  color: white;
+  background: #333;
+  border-radius: var(--border-width);
 }
+.gradient-border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    #5f86f2,
+    #a65ff2,
+    #f25fd0,
+    #f25f61,
+    #f2cb5f,
+    #abf25f,
+    #5ff281,
+    #5ff2f0
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* .customNavBar {
+  background-color: hsl(185, 94%, 15%);
+  background-color: #fff;
+} */
 
 .customBackground {
   background-color: lightblue;
@@ -29,18 +75,24 @@ code {
   position: relative;
   animation-name: mymove;
   animation-duration: 10s;
-  animation-direction:alternate;
-  animation-timing-function:linear;
-  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   /* animation-delay:; */
   /* animation-fill-mode:; */
   /* animation-play-state:; */
 }
 
 @keyframes mymove {
-  0%   {left:0%;}
-  50%  {left:50%;}
-  100% {left:0%;}
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 /* @keyframes mymove {
