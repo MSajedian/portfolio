@@ -59,6 +59,11 @@ body {
 } */
 
 .customBackground-1 {
+  background-color: #f5f5f5d9;
+  /* background-color: rgb(159, 218, 163); */
+}
+
+.customBackground-2 {
   background-color: lightblue;
 }
 

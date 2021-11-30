@@ -6,22 +6,23 @@ export default function About() {
         <Container className="pt-4">
             <Row>
                 <Col lg={6} md={6} className="mb-5 px-5 ">
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-between align-items-center mb-4">
                         <div className="fs-1 fw-bold ">About me</div>
-                        <Button href="https://drive.google.com/file/d/1d8cW4WhXov6nmRKyd4XkFyOAlaT59r4z/view" variant="outline-dark" className="shadow" target="_blank">Download CV</Button>
                     </div>
-                    <hr />
-                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
+                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a master's degree in eletrical engineering (Electronics) and was working as an eletrical engineer.
                         I have always been interested in coding so from March 2021, I took part in full-stack web developer course to pursue my dreams of becoming a full-stack web developer.
                     </p>
+                    <div className="d-flex justify-content-center align-items-center mb-4">
+                        <Button href="https://drive.google.com/file/d/1d8cW4WhXov6nmRKyd4XkFyOAlaT59r4z/view" variant="success" className="shadow" target="_blank">Download CV</Button>
+                    </div>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
 
                 </Col>
                 <Col lg={6} md={6} className="mb-5 ">
                     <Tab.Container id="tabs" defaultActiveKey="skills"  >
                         <Row>
-                            <Col className=" pb-1">
+                            <Col className=" pb-3 border-bottom border-dark">
                                 <Nav className="flex-row justify-content-center">
                                     <Nav.Item>
                                         <Nav.Link eventKey="skills" className="customNavLink">
@@ -233,8 +234,45 @@ export default function About() {
                                             </Row>
                                         </Container>
                                     </Tab.Pane>
+
+                                    <Tab.Pane eventKey="education">
+                                        <Table striped bordered className="shadow text-center customBackground-2">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
+                                                    <th>Institution</th>
+                                                    <th>Modules included</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>MERN Full-Stack Developer</td>
+                                                    <td>Mar 2021</td>
+                                                    <td>Oct 2021</td>
+                                                    <td>Strive School</td>
+                                                    <td>HTML, CSS, JavaScript, Git, GitHub, VSCode, UX, UI, Bootstrap, ES6, Promises, AJAX, npm, REST, ReactJS, NodeJS, ExpressJS, TypeScript, Hooks, Redux, Thunk, Middlewares, SQL, Postgres, Sequelize, NoSQL, Mongo, Mongoose ...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Master's degree in Electrical Engineering</td>
+                                                    <td>2013</td>
+                                                    <td>2016</td>
+                                                    <td>Islamic Azad University, Fasa Branch in Iran</td>
+                                                    <td>Linear Integrated Circuits Design, Semiconductor Devices, Theory & Fabrication Technology of Semiconductor Devices, Quantum Electronics, ...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bachelor's degree in Electrical Engineering</td>
+                                                    <td>2007</td>
+                                                    <td>2012</td>
+                                                    <td>Islamic Azad University, Fasa Branch in Iran</td>
+                                                    <td>Electric Circuits, Industrial Electronics, Technical Drawing, Logic Circuits, Microprocessors, Computer Architecture, Computer Programming, Industrial Controllers, Linear Control Systems, ...</td>
+                                                </tr>
+                                            </tbody>
+                                        </Table>
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey="experience">
-                                        <Table striped bordered className="shadow text-center" >
+                                        <Table striped bordered className="shadow text-center customBackground-2" >
                                             <thead>
                                                 <tr>
                                                     <th>Start Date</th>
@@ -273,42 +311,6 @@ export default function About() {
                                                     <td>Jan 2012</td>
                                                     <td>Layout Designer</td>
                                                     <td>Literature Journal of Islamic Azad University, Fasa, Iran</td>
-                                                </tr>
-                                            </tbody>
-                                        </Table>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="education">
-                                        <Table striped bordered className="shadow text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th>Title</th>
-                                                    <th>Start Date</th>
-                                                    <th>End Date</th>
-                                                    <th>Institution</th>
-                                                    <th>Modules included</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>MERN Full-Stack Developer</td>
-                                                    <td>Mar 2021</td>
-                                                    <td>Oct 2021</td>
-                                                    <td>Strive School</td>
-                                                    <td>HTML, CSS, JavaScript, Git, GitHub, VSCode, UX, UI, Bootstrap, ES6, Promises, AJAX, npm, REST, ReactJS, NodeJS, ExpressJS, TypeScript, Hooks, Redux, Thunk, Middlewares, SQL, Postgres, Sequelize, NoSQL, Mongo, Mongoose ...</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Master's degree in Electrical Engineering</td>
-                                                    <td>2013</td>
-                                                    <td>2016</td>
-                                                    <td>Islamic Azad University, Fasa Branch in Iran</td>
-                                                    <td>Linear Integrated Circuits Design, Semiconductor Devices, Theory & Fabrication Technology of Semiconductor Devices, Quantum Electronics, ...</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Bachelor's degree in Electrical Engineering</td>
-                                                    <td>2007</td>
-                                                    <td>2012</td>
-                                                    <td>Islamic Azad University, Fasa Branch in Iran</td>
-                                                    <td>Electric Circuits, Industrial Electronics, Technical Drawing, Logic Circuits, Microprocessors, Computer Architecture, Computer Programming, Industrial Controllers, Linear Control Systems, ...</td>
                                                 </tr>
                                             </tbody>
                                         </Table>
