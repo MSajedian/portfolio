@@ -65,7 +65,7 @@ export default function Contact() {
     return (
         <Container className="pt-3">
             <div className="fs-1 fw-bold">Contact me</div>
-            <Row className="mt-5">
+            <Row className="mt-5 text-center">
                 <Col>
                     <div className="contact-card bg-dark text-white rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4" >
                         <div className="fs-1"><FiMail /></div>

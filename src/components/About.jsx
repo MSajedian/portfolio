@@ -5,24 +5,24 @@ export default function About() {
     return (
         <Container className="pt-4">
             <Row>
-                <Col lg={6} md={6} className="mb-5">
+                <Col lg={6} md={6} className="mb-5 px-5 ">
                     <div className="d-flex justify-content-between align-items-center">
-                        <div className="fs-1 fw-bold">About me</div>
+                        <div className="fs-1 fw-bold ">About me</div>
                         <Button href="https://drive.google.com/file/d/1d8cW4WhXov6nmRKyd4XkFyOAlaT59r4z/view" variant="outline-dark" className="shadow" target="_blank">Download CV</Button>
                     </div>
                     <hr />
-                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
+                    <p className="about-par-1">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a master's degree in eletrical engineering (Electronics) and was working as an eletrical engineer.
-                        I have always been interested in coding so from March 2021, I took part in full stack web developer course to pursue my dreams of becoming a full stack web developer.
+                        I have always been interested in coding so from March 2021, I took part in full-stack web developer course to pursue my dreams of becoming a full-stack web developer.
                     </p>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
 
                 </Col>
-                <Col lg={6} md={6} className="mb-5 mt-2">
-                    <Tab.Container id="tabs" defaultActiveKey="skills" >
+                <Col lg={6} md={6} className="mb-5 ">
+                    <Tab.Container id="tabs" defaultActiveKey="skills"  >
                         <Row>
-                            <Col>
-                                <Nav className="flex-row">
+                            <Col className=" pb-1">
+                                <Nav className="flex-row justify-content-center">
                                     <Nav.Item>
                                         <Nav.Link eventKey="skills" className="customNavLink">
                                             Skills
@@ -47,194 +47,194 @@ export default function About() {
                                     <Tab.Pane eventKey="skills" >
                                         <Container
                                             // className="border pt-4 border-success rounded shadow"
-                                            className="border pt-4 rounded shadow customBackground"
+                                            className="pt-1"
                                         >
                                             <Row>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p92">
+                                                    <div className="c100 p92">
                                                         <span className="mt-1"><img style={{ width: "60%" }} src="../assets/images/html.png" alt="HTML" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font ">HTML</h6>
+                                                    <h6 className="open-sans-font ">HTML</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p80" >
+                                                    <div className="c100 p80" >
                                                         <span className="mt-1"><img style={{ width: "60%" }} src="../assets/images/css.png" alt="CSS" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">CSS</h6>
+                                                    <h6 className="open-sans-font text-center">CSS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p75" >
+                                                    <div className="c100 p75" >
                                                         <span><img style={{ width: "50%" }} src="../assets/images/javascript.png" alt="JavaScript" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">JavaScript</h6>
+                                                    <h6 className="open-sans-font text-center">JavaScript</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p70" >
+                                                    <div className="c100 p70" >
                                                         <span><img style={{ width: "100%" }} src="../assets/images/react.png" alt="React" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">React</h6>
+                                                    <h6 className="open-sans-font text-center">React</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p55" >
+                                                    <div className="c100 p55" >
                                                         <span><img style={{ width: "80%" }} src="../assets/images/nodejs.png" alt="NodeJS" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">NodeJS</h6>
+                                                    <h6 className="open-sans-font text-center">NodeJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p50" >
+                                                    <div className="c100 p50" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/expressjs.png" alt="ExpressJS" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">ExpressJS</h6>
+                                                    <h6 className="open-sans-font text-center">ExpressJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p45" >
+                                                    <div className="c100 p45" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/mongodb.png" alt="MongoDB" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">MongoDB</h6>
+                                                    <h6 className="open-sans-font text-center">MongoDB</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p45" >
+                                                    <div className="c100 p45" >
                                                         <span><img style={{ width: "75%" }} src="../assets/images/mongoosejs.png" alt="MongooseJS" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">MongooseJS</h6>
+                                                    <h6 className="open-sans-font text-center">MongooseJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p80" >
+                                                    <div className="c100 p80" >
                                                         <span><img style={{ width: "75%" }} src="../assets/images/react-bootstrap.png" alt="React Bootstrap" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">React Bootstrap</h6>
+                                                    <h6 className="open-sans-font text-center">React Bootstrap</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p40" >
+                                                    <div className="c100 p40" >
                                                         <span><img style={{ width: "75%" }} src="../assets/images/postgresql.png" alt="PostgreSQL" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">PostgreSQL</h6>
+                                                    <h6 className="open-sans-font text-center">PostgreSQL</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p35" >
+                                                    <div className="c100 p35" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/typescript.png" alt="TypeScript" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">TypeScript</h6>
+                                                    <h6 className="open-sans-font text-center">TypeScript</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p45" >
+                                                    <div className="c100 p45" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/redux.png" alt="Redux" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">Redux</h6>
+                                                    <h6 className="open-sans-font text-center">Redux</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p70" >
+                                                    <div className="c100 p70" >
                                                         <span><img style={{ width: "75%" }} src="../assets/images/bootstrap.png" alt="Bootstrap" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">Bootstrap</h6>
+                                                    <h6 className="open-sans-font text-center">Bootstrap</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p65" >
+                                                    <div className="c100 p65" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/git.png" alt="Git" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">Git</h6>
+                                                    <h6 className="open-sans-font text-center">Git</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p45" >
+                                                    <div className="c100 p45" >
                                                         <span><img style={{ width: "70%" }} src="../assets/images/restapi.png" alt="REST API" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">REST API</h6>
+                                                    <h6 className="open-sans-font text-center">REST API</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p35" >
+                                                    <div className="c100 p35" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/jest.png" alt="Jest" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">Jest</h6>
+                                                    <h6 className="open-sans-font text-center">Jest</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p20" >
+                                                    <div className="c100 p20" >
                                                         <span><img style={{ width: "55%" }} src="../assets/images/ci-cd.png" alt="CI-CD" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">CI-CD</h6>
+                                                    <h6 className="open-sans-font text-center">CI-CD</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div class="c100 p30" >
+                                                    <div className="c100 p30" >
                                                         <span><img style={{ width: "60%" }} src="../assets/images/data-structure.png" alt="Data Structure" /></span>
-                                                        <div class="slice">
-                                                            <div class="bar" style={{ borderColor: "darkgreen" }}></div>
-                                                            <div class="fill" style={{ borderColor: "darkgreen" }}></div>
+                                                        <div className="slice">
+                                                            <div className="bar" style={{ borderColor: "darkgreen" }}></div>
+                                                            <div className="fill" style={{ borderColor: "darkgreen" }}></div>
                                                         </div>
                                                     </div>
-                                                    <h6 class="open-sans-font text-center">Data Structure</h6>
+                                                    <h6 className="open-sans-font text-center">Data Structure</h6>
                                                 </Col>
                                             </Row>
                                         </Container>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="experience">
-                                        <Table striped bordered className="shadow text-center customBackground" >
+                                        <Table striped bordered className="shadow text-center" >
                                             <thead>
                                                 <tr>
                                                     <th>Start Date</th>
@@ -278,7 +278,7 @@ export default function About() {
                                         </Table>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="education">
-                                        <Table striped bordered className="shadow text-center customBackground">
+                                        <Table striped bordered className="shadow text-center">
                                             <thead>
                                                 <tr>
                                                     <th>Title</th>
@@ -290,7 +290,7 @@ export default function About() {
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>MERN Full Stack Developer</td>
+                                                    <td>MERN Full-Stack Developer</td>
                                                     <td>Mar 2021</td>
                                                     <td>Oct 2021</td>
                                                     <td>Strive School</td>
