@@ -14,10 +14,9 @@ export default function About() {
                         I have always been interested in coding so from March 2021, I took part in full-stack web developer course to pursue my dreams of becoming a full-stack web developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
-                        <Button href="https://drive.google.com/file/d/1d8cW4WhXov6nmRKyd4XkFyOAlaT59r4z/view" variant="success" className="shadow" target="_blank">Download CV</Button>
+                        <Button href="https://drive.google.com/file/d/1zz_C4G5ygwdPDZ0F5oyvaFpVr_u_Tbv1/view" variant="success" className="shadow" target="_blank">Download CV</Button>
                     </div>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
-
                 </Col>
                 <Col lg={6} md={6} className="mb-5 ">
                     <Tab.Container id="tabs" defaultActiveKey="skills"  >
