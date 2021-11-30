@@ -11,10 +11,10 @@ export default function About() {
                     </div>
                     <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a master's degree in eletrical engineering (Electronics) and was working as an eletrical engineer.
-                        I have always been interested in coding so from March 2021, I took part in full-stack web developer course to pursue my dreams of becoming a full-stack web developer.
+                        I have always been interested in coding so from March 2021, I took part in full-stack web developer course to pursue my dreams of becoming a web developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
-                        <Button href="https://drive.google.com/file/d/1zz_C4G5ygwdPDZ0F5oyvaFpVr_u_Tbv1/view" variant="success" className="shadow" target="_blank">Download CV</Button>
+                        <Button href="https://drive.google.com/file/d/1zTY7mpCkUa9uoqAE9GEHoBEb3PXSKG3I/view" variant="success" className="shadow" target="_blank">Download CV</Button>
                     </div>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
                 </Col>
