@@ -1,16 +1,27 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { GrLinkedin } from 'react-icons/gr';
 import { ImGithub } from 'react-icons/im';
-import { Link } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
+
+function CustomNavLink({ label, to, activeOnlyWhenExact }) {
+    let match = useRouteMatch({
+        path: to,
+        exact: activeOnlyWhenExact
+    });
+
+    return (
+        <Link className={match ? "active nav-link fs-4 text-white" : "nav-link fs-5"} to={to}>{label}</Link>
+    );
+}
 
 export default function MainNavbar() {
     return (
         <>
-            <Navbar collapseOnSelect 
-            expand="lg" 
-            // bg="dark" 
-            // variant="light"
-            className="customNavBar"
+            <Navbar collapseOnSelect
+                expand="lg"
+                // bg="dark" 
+                // variant="light"
+                className="customNavBar"
             >
                 <Container>
                     {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
@@ -18,12 +29,12 @@ export default function MainNavbar() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto align-items-center">
-                            <Link to="/" className="nav-link fs-5">Home</Link>
+                            <CustomNavLink to="/" className="nav-link fs-5" label="Home" activeOnlyWhenExact={true} />
                             {/* <Nav.Link href="/">Home</Nav.Link> */}
-                            <Link to="/about" className="nav-link fs-5">About</Link>
+                            <CustomNavLink to="/about" className="nav-link fs-5" label="About" />
                             {/* <Nav.Link href="/about">About</Nav.Link> */}
-                            <Link to="/projects" className="nav-link fs-5">Projects</Link>
-                            <Link to="/contact" className="nav-link fs-5">Contact</Link>
+                            <CustomNavLink to="/projects" className="nav-link fs-5" label="Projects" />
+                            <CustomNavLink to="/contact" className="nav-link fs-5" label="Contact" />
                             {/* <Button className="" variant="dark" onClick={() => (history.push("/contact"))}>Contact</Button> */}
 
                             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
