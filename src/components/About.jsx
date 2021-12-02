@@ -9,9 +9,9 @@ export default function About() {
                     <div className="d-flex justify-content-between align-items-center mb-4">
                         <div className="fs-1 fw-bold ">About me</div>
                     </div>
-                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>MERN Full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
-                        I have a master's degree in eletrical engineering (Electronics) and was working as an eletrical engineer.
-                        I have always been interested in coding so from March 2021, I took part in full-stack web developer course to pursue my dreams of becoming a web developer.
+                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
+                        I have a master's degree in Eletrical Engineering (Electronics) and was working as an eletrical engineer for several years.
+                        I have always been interested in coding so from March 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
                         <Button href="https://drive.google.com/file/d/1zTY7mpCkUa9uoqAE9GEHoBEb3PXSKG3I/view" variant="success" className="shadow" target="_blank">Download CV</Button>
