@@ -132,6 +132,10 @@ code {
   text-align: justify;
 }
 
+.description-par-1 {
+  text-align: justify;
+}
+
 .home-container {
   min-height: 90vh;
 }
