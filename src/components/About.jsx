@@ -248,7 +248,7 @@ export default function About() {
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>MERN Full-Stack Developer</td>
+                                                    <td>Full-Stack Web Developer</td>
                                                     <td>Mar 2021</td>
                                                     <td>Oct 2021</td>
                                                     <td>Strive School</td>
