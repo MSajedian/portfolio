@@ -3,13 +3,14 @@ import { Container, Row, Col, Nav, Tab, Button, Table, Image } from 'react-boots
 
 export default function About() {
     return (
-        <Container className="pt-4">
-            <Row>
-                <Col lg={6} md={6} className="mb-5 px-5 ">
-                    <div className="d-flex justify-content-between align-items-center mb-4">
+        <Container className="pt-3">
+            <div className="fs-1 fw-bold">About me</div>
+                    {/* <div className="d-flex justify-content-between align-items-center mb-4">
                         <div className="fs-1 fw-bold ">About me</div>
-                    </div>
-                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b> and I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
+                    </div> */}
+            <Row className="mt-3">
+                <Col lg={6} md={6} className="mb-5 px-5 ">
+                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b>, I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a master's degree in Eletrical Engineering (Electronics) and was working as an eletrical engineer for several years.
                         I have always been interested in coding so from March 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
                     </p>
@@ -18,7 +19,7 @@ export default function About() {
                     </div>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
                 </Col>
-                <Col lg={6} md={6} className="mb-5 ">
+                <Col lg={6} md={6} className="mb-5">
                     <Tab.Container id="tabs" defaultActiveKey="skills"  >
                         <Row>
                             <Col className=" pb-3 border-bottom border-dark">
