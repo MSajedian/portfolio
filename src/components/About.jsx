@@ -15,7 +15,7 @@ export default function About() {
                         I have always been interested in coding so from March 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
-                        <Button href="https://drive.google.com/file/d/1_j3JeA4oA-fElTmAcp4D92P27T7cvNsh/view" variant="success" className="shadow" target="_blank">Download CV</Button>
+                        <Button href="https://drive.google.com/file/d/1_j3JeA4oA-fElTmAcp4D92P27T7cvNsh/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
                     </div>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
                 </Col>

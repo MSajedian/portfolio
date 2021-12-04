@@ -63,7 +63,7 @@ export default function Home() {
                         <p>Hi, I am</p>
                         <p className="fw-bold">Mohammadamin Sajedian</p>
                         <p>Full-Stack Web Developer</p>
-                        <Link to="/about" className="m-4 fs-5 btn btn-success shadow">More About Me</Link>
+                        <Link to="/about" className="m-4 fs-5 btn btn-success shadow btn-grad">More About Me</Link>
                     </div>
                 </Col>
                 <Col lg={6} className="align-self-center">
