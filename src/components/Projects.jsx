@@ -13,6 +13,9 @@ export default function Projects() {
                         <Card.Img variant="top" src="../assets/images/topedu.jpg" />
                         <Card.Body>
                             <Card.Title>TopEdu</Card.Title>
+                            <div><b><BsInfoCircle className="mb-1"/> About:</b>{' '}
+                                <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
+                            </div>
                             <div><b><HiOutlineExternalLink className="mb-1" /> Demo:</b>{' '}
                                 <a href="https://topedu.vercel.app/" target="_blank" rel="noreferrer">TopEdu</a>
                             </div>
@@ -20,9 +23,6 @@ export default function Projects() {
                                 <a href="https://github.com/MSajedian/Topedu-Reactjs" target="_blank" rel="noreferrer">Topedu-Reactjs</a> / <a href="https://github.com/MSajedian/Topedu-Expressjs" target="_blank" rel="noreferrer">Topedu-Expressjs</a>
                             </div>
                             <div><b><IoIosApps className="mb-1"/> Tech:</b> ReactJS, Redux, CSS, ExpressJS, NodeJS, MongoDB</div>
-                            <div><b><BsInfoCircle className="mb-1"/> About:</b>{' '}
-                                <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
-                            </div>
                         <hr />
                         <div className="description-par-1">TopEdu is a learning management system. In this web app, teachers can create their courses and students can use these courses also there is a code playground available to all users so they can execute their HTML, CSS and JavaScript codes in the app.</div>
                         </Card.Body>
