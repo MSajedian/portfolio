@@ -24,7 +24,7 @@ export default function Projects() {
                                 <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
                             </div>
                         <hr />
-                        <div className="description-par-1">TopEdu is a learning managment system, Teachers can create their courses and students can use these courses. There is a code playground available to all users so they can exectue their html, css and javaScript codes in the app.</div>
+                        <div className="description-par-1">TopEdu is a learning management system. In this web app, teachers can create their courses and students can use these courses also there is a code playground available to all users so they can execute their HTML, CSS and JavaScript codes in the app.</div>
                         </Card.Body>
                     </Card>
                 </Col>
