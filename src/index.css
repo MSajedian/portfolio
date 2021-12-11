@@ -43,8 +43,8 @@ td {
   font-family: Lato, sans-serif;
   /* font-size: 2.5rem; */
   text-transform: uppercase;
-  color: white;
-  background: #444;
+  color: black;
+  background: hsl(0, 0%, 80%);
   border-radius: var(--border-width);
 }
 .gradient-border::after {
