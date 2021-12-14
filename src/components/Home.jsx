@@ -37,7 +37,7 @@ export default function Home() {
                             <h4 className="m-1"><q>DO WHAT YOU LOVE - LOVE WHAT YOU DO</q></h4>
                             <br />
                         </Carousel.Item>
-                        <Carousel.Item interval={5000}>
+                        <Carousel.Item interval={3000}>
                             <br />
                             <h4 className="m-1"><q>SEEK KNOWLEDGE FROM THE CRADLE TO THE GRAVE</q></h4>
                             <br />
@@ -48,7 +48,7 @@ export default function Home() {
                             <h4 className="m-1"><q>EVER POSITIVE - NEVER NEGATIVE</q></h4>
                             <br />
                         </Carousel.Item>
-                        <Carousel.Item interval={5000}>
+                        <Carousel.Item interval={3000}>
                             <br />
                             <h4 className="m-1"><q>YOUR ATTITUDE DETERMINES YOUR ALTITUDE</q></h4>
                             <br />
