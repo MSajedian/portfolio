@@ -97,7 +97,7 @@ td {
   /* font-size: 2.5rem; */
   text-transform: uppercase;
   color: black;
-  background: hsl(0, 0%, 80%);
+  background: hsl(0, 0%, 90%);
   border-radius: var(--border-width);
 }
 .gradient-border::after {
