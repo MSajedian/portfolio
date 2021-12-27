@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col, Nav, Tab, Button, Table, Image } from 'react-bootstrap'
 
+const BackendURL = process.env.REACT_APP_BACKEND_REMOTE_URL || process.env.REACT_APP_BACKEND_LOCAL_URL
+
+
 export default function About() {
+    function sendEmail() {
+        try {
+            fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name:"someone", emailAddress:"...", message:"visited the about page of portfolio" }) // body data type must match "Content-Type" header
+            })
+                .then(res => { if (res.ok) { console.log('error connection to the backend') } })
+        } catch (error) { console.log('error:', error) }
+    }
+
+    useEffect(() => {
+        sendEmail();
+        // eslint-disable-next-line
+    }, [])
+
     return (
         <Container className="pt-3">
             <div className="fs-1 fw-bold">About me</div>
-                    {/* <div className="d-flex justify-content-between align-items-center mb-4">
+            {/* <div className="d-flex justify-content-between align-items-center mb-4">
                         <div className="fs-1 fw-bold ">About me</div>
                     </div> */}
             <Row className="mt-3">
