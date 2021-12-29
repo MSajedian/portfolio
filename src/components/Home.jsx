@@ -1,5 +1,8 @@
+import React, { useEffect } from 'react'
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+
+const BackendURL = process.env.REACT_APP_BACKEND_REMOTE_URL || process.env.REACT_APP_BACKEND_LOCAL_URL
 
 export default function Home() {
     // const [pupilTop, setPupilTop] = useState("50%");
@@ -13,6 +16,22 @@ export default function Home() {
     //     setPupilTop(y);
     //     setPupilTransform(`translate(-${x},-${y})`);
     // }
+
+    function sendEmail() {
+        try {
+            fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name:"someone", emailAddress:"...", message:"visited the home page of portfolio" }) // body data type must match "Content-Type" header
+            })
+                .then(res => { if (res.ok) { console.log('error connection to the backend') } })
+        } catch (error) { console.log('error:', error) }
+    }
+
+    useEffect(() => {
+        sendEmail();
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <Container className="home-container pt-4"
