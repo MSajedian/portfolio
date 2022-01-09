@@ -53,23 +53,23 @@ export default function Home() {
                     >
                         <Carousel.Item interval={3000}>
                             <br />
-                            <h4 className="m-1"><q>DO WHAT YOU LOVE - LOVE WHAT YOU DO</q></h4>
+                            <h4 className="m-1"><q>DO WHAT YOU <span className="text-danger">LOVE</span> - <span className="text-danger">LOVE</span> WHAT YOU DO</q></h4>
                             <br />
                         </Carousel.Item>
-                        <Carousel.Item interval={3000}>
+                        <Carousel.Item interval={4000}>
                             <br />
-                            <h4 className="m-1"><q>SEEK KNOWLEDGE FROM THE CRADLE TO THE GRAVE</q></h4>
+                            <h4 className="m-1"><q>SEEK <span className="text-primary">KNOWLEDGE</span> FROM THE CRADLE TO THE GRAVE</q></h4>
                             <br />
                             {/* <p>Prophet Muhammad</p> */}
                         </Carousel.Item>
                         <Carousel.Item interval={3000}>
                             <br />
-                            <h4 className="m-1"><q>EVER POSITIVE - NEVER NEGATIVE</q></h4>
+                            <h4 className="m-1"><q>EVER <span className="text-success">POSITIVE</span> - NEVER <span className="text-danger">NEGATIVE</span></q></h4>
                             <br />
                         </Carousel.Item>
                         <Carousel.Item interval={3000}>
                             <br />
-                            <h4 className="m-1"><q>YOUR ATTITUDE DETERMINES YOUR ALTITUDE</q></h4>
+                            <h4 className="m-1"><q>YOUR <span className="text-primary">ATTITUDE</span> DETERMINES YOUR <span className="text-primary">ALTITUDE</span></q></h4>
                             <br />
                         </Carousel.Item>
                     </Carousel>
