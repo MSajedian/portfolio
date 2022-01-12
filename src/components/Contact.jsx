@@ -12,10 +12,12 @@ export default function Contact() {
     const [message, setMessage] = useState("");
     const [sendEmailText, setSendEmailText] = useState("Send Email");
     const [sendEmailStyle, setSendEmailStyle] = useState("dark");
+    const [disableButton, setDisableButton] = useState(false);
 
     const handleSendEmail = async (event) => {
         event.preventDefault();
         event.stopPropagation();
+        setDisableButton(true)
         setSendEmailText("Sending ...")
         setSendEmailStyle("primary")
         try {
@@ -29,6 +31,7 @@ export default function Contact() {
                         setSendEmailText("Email Sent")
                         setSendEmailStyle("success")
                         setTimeout(function () {
+                            setDisableButton(false)
                             setSendEmailText("Send Email")
                             setSendEmailStyle("dark")
                         }, 3000)
@@ -116,7 +119,7 @@ export default function Contact() {
                         </Col>
                     </Row>
                     <div className="d-flex justify-content-end">
-                        <Button variant={sendEmailStyle} type="submit">{sendEmailText}</Button>
+                        <Button variant={sendEmailStyle} type="submit" disabled={disableButton}>{sendEmailText}</Button>
                     </div>
                 </Form>
             </Row >
