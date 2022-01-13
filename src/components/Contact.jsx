@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Col, Container, Form, Row, Button } from 'react-bootstrap'
+import React, { useEffect, useState } from 'react';
+import { Button, Col, Container, Form, Row, Spinner } from 'react-bootstrap';
 import { FiMail } from 'react-icons/fi';
 import { GrLinkedin } from 'react-icons/gr';
 import { MdLocationPin } from 'react-icons/md';
@@ -13,12 +13,14 @@ export default function Contact() {
     const [sendEmailText, setSendEmailText] = useState("Send Email");
     const [sendEmailStyle, setSendEmailStyle] = useState("dark");
     const [disableButton, setDisableButton] = useState(false);
+    const [spinnerForButton, setSpinnerForButton] = useState(false);
 
     const handleSendEmail = async (event) => {
         event.preventDefault();
         event.stopPropagation();
         setDisableButton(true)
-        setSendEmailText("Sending ...")
+        setSpinnerForButton(true)
+        setSendEmailText("Sending...")
         setSendEmailStyle("primary")
         try {
             fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
@@ -28,6 +30,7 @@ export default function Contact() {
             })
                 .then(res => {
                     if (res.ok) {
+                        setSpinnerForButton(false)
                         setSendEmailText("Email Sent")
                         setSendEmailStyle("success")
                         setTimeout(function () {
@@ -119,7 +122,7 @@ export default function Contact() {
                         </Col>
                     </Row>
                     <div className="d-flex justify-content-end">
-                        <Button variant={sendEmailStyle} type="submit" disabled={disableButton}>{sendEmailText}</Button>
+                        <Button variant={sendEmailStyle} type="submit" disabled={disableButton}>{spinnerForButton ? <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" /> : <></>} {sendEmailText}</Button>
                     </div>
                 </Form>
             </Row >
