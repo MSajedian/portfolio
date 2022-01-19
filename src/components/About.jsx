@@ -1,25 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Container, Row, Col, Nav, Tab, Button, Table, Image } from 'react-bootstrap'
 
-const BackendURL = process.env.REACT_APP_BACKEND_REMOTE_URL || process.env.REACT_APP_BACKEND_LOCAL_URL
-
-
 export default function About() {
-    function sendEmail() {
-        try {
-            fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name:"someone", emailAddress:"...", message:"visited the about page of portfolio" }) // body data type must match "Content-Type" header
-            })
-                .then(res => { if (res.ok) { console.log('error connection to the backend') } })
-        } catch (error) { console.log('error:', error) }
-    }
-
-    useEffect(() => {
-        sendEmail();
-        // eslint-disable-next-line
-    }, [])
 
     return (
         <Container className="pt-3">
@@ -34,7 +16,7 @@ export default function About() {
                         I have always been interested in coding so from March 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
-                        <Button href="https://drive.google.com/file/d/1CIYS3-GYRuSoBO1e0g9iWofCoYjsv9AG/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
+                        <Button href="https://drive.google.com/file/d/1D5Zgi_UnVyRbmXfwgpsOQRHC7K09l2hi/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
                     </div>
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
                 </Col>

@@ -22,7 +22,7 @@ export default function Home() {
             fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name:"someone", emailAddress:"...", message:"visited the home page of portfolio" }) // body data type must match "Content-Type" header
+                body: JSON.stringify({ name:"someone", emailAddress:"...", message:"someone visited the home page of portfolio" }) // body data type must match "Content-Type" header
             })
                 .then(res => { if (res.ok) { console.log('error connection to the backend') } })
         } catch (error) { console.log('error:', error) }
