@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const BackendURL = process.env.REACT_APP_BACKEND_REMOTE_URL || process.env.REACT_APP_BACKEND_LOCAL_URL
 
@@ -17,20 +18,53 @@ export default function Home() {
     //     setPupilTransform(`translate(-${x},-${y})`);
     // }
 
+    // const [data, setdata] = useState("");
+
+
+
     function sendEmail() {
-        try {
-            fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name:"someone", emailAddress:"...", message:"someone visited the home page of portfolio" }) // body data type must match "Content-Type" header
+        axios.get(`https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.REACT_APP_IPGEOLOCATION_ABSTRACT_API_KEY}`)
+            .then(response1 => {
+                console.log('response1.data:', response1.data)
+                axios.get(`http://ipwhois.app/json/${response1.data.ip_address}`)
+                    .then(response2 => {
+                        console.log('response2.data:', response2.data)
+                        const { ip_address, timezone } = response1.data
+                        const { continent, continent_code, country, country_code, country_capital, country_phone, region, city, latitude, longitude, org, isp } = response2.data
+                        try {
+                            fetch(`${BackendURL}/users/sendemailforpersonalpage`, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    name: "...", emailAddress: "...", message: `home page of portfolio viewed from <br />
+                                    continent: ${continent}<br /> continent_code: ${continent_code}<br /> country: ${country}<br /> country_code: ${country_code}<br /> 
+                                    country_capital: ${country_capital}<br /> country_phone: ${country_phone}<br />
+                                    region: ${region}<br /> city: ${city}<br />
+                                    latitude: ${latitude}<br /> longitude: ${longitude}<br /> 
+                                    org: ${org}<br /> isp: ${isp}<br /> 
+                                    timezone.current_time: ${timezone.current_time}<br /> timezone.abbreviation: ${timezone.abbreviation}<br /> timezone.name: ${timezone.name}<br />
+                                    http://ipwhois.app/json/${ip_address}`
+                                })
+                                // body data type must match "Content-Type" header
+                            })
+                            .then(res => { if (!res.ok) { console.log('error connection to the backend') } })
+                        } catch (error) { console.log('error:', error) }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+
             })
-                .then(res => { if (res.ok) { console.log('error connection to the backend') } })
-        } catch (error) { console.log('error:', error) }
+            .catch(error => {
+                console.log(error);
+            });
+
     }
 
     useEffect(() => {
         sendEmail();
         // eslint-disable-next-line
+
     }, [])
 
     return (
@@ -44,12 +78,12 @@ export default function Home() {
             </Row> */}
             <Row >
                 <Col className="text-center" >
-                    <Carousel 
-                    className="gradient-border"
-                    // variant="dark" 
-                    // wrap={false} 
-                    controls={false} 
-                    indicators={false}
+                    <Carousel
+                        className="gradient-border"
+                        // variant="dark" 
+                        // wrap={false} 
+                        controls={false}
+                        indicators={false}
                     >
                         <Carousel.Item interval={3000}>
                             <br />
