@@ -26,7 +26,7 @@ export default function Home() {
         axios.get(`https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.REACT_APP_IPGEOLOCATION_ABSTRACT_API_KEY}`)
             .then(response1 => {
                 console.log('response1.data:', response1.data)
-                axios.get(`http://ipwhois.app/json/${response1.data.ip_address}`)
+                axios.get(`https://ipwhois.app/json/${response1.data.ip_address}`)
                     .then(response2 => {
                         console.log('response2.data:', response2.data)
                         const { ip_address, timezone } = response1.data
@@ -43,7 +43,7 @@ export default function Home() {
                                     latitude: ${latitude}<br /> longitude: ${longitude}<br /> 
                                     org: ${org}<br /> isp: ${isp}<br /> 
                                     timezone.current_time: ${timezone.current_time}<br /> timezone.abbreviation: ${timezone.abbreviation}<br /> timezone.name: ${timezone.name}<br />
-                                    http://ipwhois.app/json/${ip_address}`
+                                    https://ipwhois.app/json/${ip_address}`
                                 })
                                 // body data type must match "Content-Type" header
                             })
