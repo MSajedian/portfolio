@@ -13,7 +13,7 @@ export default function About() {
                 <Col lg={6} md={6} className="mb-5 px-5 ">
                     <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b>, I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
                         I have a master's degree in Eletrical Engineering (Electronics) and was working as an eletrical engineer for several years.
-                        I have always been interested in coding so from March 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
+                        I have always been interested in coding so from 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
                         <Button href="https://drive.google.com/file/d/1D5Zgi_UnVyRbmXfwgpsOQRHC7K09l2hi/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
