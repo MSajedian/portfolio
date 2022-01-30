@@ -20,8 +20,6 @@ export default function Home() {
 
     // const [data, setdata] = useState("");
 
-
-
     function sendEmail() {
         axios.get(`https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.REACT_APP_IPGEOLOCATION_ABSTRACT_API_KEY}`)
             .then(response1 => {
@@ -58,7 +56,6 @@ export default function Home() {
             .catch(error => {
                 console.log(error);
             });
-
     }
 
     useEffect(() => {
