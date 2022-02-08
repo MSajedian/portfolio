@@ -22,9 +22,29 @@ export default function Projects() {
                             <div><b><HiCode className="mb-1"/> Codes:</b>{' '}
                                 <a href="https://github.com/MSajedian/Topedu-Reactjs" target="_blank" rel="noreferrer">Topedu-Reactjs</a> / <a href="https://github.com/MSajedian/Topedu-Expressjs" target="_blank" rel="noreferrer">Topedu-Expressjs</a>
                             </div>
-                            <div><b><IoIosApps className="mb-1"/> Tech:</b> ReactJS, Redux, CSS, ExpressJS, NodeJS, MongoDB</div>
+                            <div><b><IoIosApps className="mb-1"/> Tech:</b> MongoDB, ExpressJS, ReactJS, NodeJS</div>
                         <hr />
                         <div className="description-par-1">TopEdu is a learning management system. In this web app, teachers can create their courses and students can use these courses also there is a code playground available to all users so they can execute their HTML, CSS and JavaScript codes in the app.</div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card className="text-center mb-4 shadow-lg">
+                        <Card.Img variant="top" src="../assets/images/whatsapp.jpg" />
+                        <Card.Body>
+                            <Card.Title>Whatsapp-Clone</Card.Title>
+                            {/* <div><b><BsInfoCircle className="mb-1"/> About:</b>{' '}
+                                <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
+                            </div> */}
+                            <div><b><HiOutlineExternalLink className="mb-1" /> Demo:</b>{' '}
+                                <a href="https://topedu.vercel.app/" target="_blank" rel="noreferrer">Whatsapp-Clone</a>
+                            </div>
+                            <div><b><HiCode className="mb-1"/> Codes:</b>{' '}
+                                <a href="https://github.com/MSajedian/whatsapp-clone-fe" target="_blank" rel="noreferrer">Whatsapp-Clone-FE</a> / <a href="https://github.com/MSajedian/whatsapp-clone-be" target="_blank" rel="noreferrer">Whatsapp-Clone-BE</a>
+                            </div>
+                            <div><b><IoIosApps className="mb-1"/> Tech:</b> MongoDB, ExpressJS, ReactJS, NodeJS</div>
+                        {/* <hr /> */}
+                        {/* <div className="description-par-1">TopEdu is a learning management system. In this web app, teachers can create their courses and students can use these courses also there is a code playground available to all users so they can execute their HTML, CSS and JavaScript codes in the app.</div> */}
                         </Card.Body>
                     </Card>
                 </Col>
