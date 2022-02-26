@@ -43,9 +43,9 @@ export default function Projects() {
                                 <a href="https://github.com/MSajedian/whatsapp-clone-fe" target="_blank" rel="noreferrer">Whatsapp-Clone-FE</a> / <a href="https://github.com/MSajedian/whatsapp-clone-be" target="_blank" rel="noreferrer">Whatsapp-Clone-BE</a>
                             </div>
                             <div><b><IoIosApps className="mb-1" /> Tech:</b> ReactJS, NodeJS, Socket.IO, ExpressJS, MongoDB</div>
-                            {/* <hr /> */}
+                            <hr />
                             <div className="description-par-1">
-                                WhatsApp Messenger, or simply WhatsApp allows users to send text messages and emojis. Users also able to change their username and picture.
+                                WhatsApp Messenger, or simply WhatsApp allows users to send text messages and emojis to each other. Users also able to change their usernames and pictures.
                             </div>
                         </Card.Body>
                     </Card>
