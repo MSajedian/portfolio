@@ -24,7 +24,7 @@ export default function Projects() {
                             </div>
                             <div><b><IoIosApps className="mb-1" /> Tech:</b> MongoDB, ExpressJS, ReactJS, NodeJS</div>
                             <hr />
-                            <div className="description-par-1">TopEdu is a learning management system. In this web app, teachers can create their courses and students can use these courses also there is a code playground available to all users so they can execute their HTML, CSS and JavaScript codes in the app.</div>
+                            <div className="description-par-1">TopEdu is a learning management system. In this web application, instructors can create their courses and learners can use these courses. Not only We can store our data as Text or Image in TopEdu but also We can execute our HTML, CSS and JavaScript codes in this web application.</div>
                         </Card.Body>
                     </Card>
                 </Col>
