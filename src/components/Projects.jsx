@@ -14,7 +14,7 @@ export default function Projects() {
                         <Card.Body>
                             <Card.Title>TopEdu</Card.Title>
                             <div><b><BsInfoCircle className="mb-1" /> About:</b>{' '}
-                                <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
+                                <a href="https://youtu.be/2FOokgd06iM" target="_blank" rel="noreferrer">Video</a>
                             </div>
                             <div><b><HiOutlineExternalLink className="mb-1" /> Demo:</b>{' '}
                                 <a href="https://topedu.vercel.app/" target="_blank" rel="noreferrer">TopEdu</a>
