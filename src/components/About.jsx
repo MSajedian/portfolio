@@ -83,6 +83,16 @@ export default function About() {
                                                     <h6 className="open-sans-font text-center">JavaScript</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
+                                                    <div className="c100 p35" >
+                                                        <span><img className="width-55" src="../assets/images/typescript.png" alt="TypeScript" /></span>
+                                                        <div className="slice">
+                                                            <div className="bar"></div>
+                                                            <div className="fill"></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 className="open-sans-font text-center">TypeScript</h6>
+                                                </Col>
+                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div className="c100 p70" >
                                                         <span><img className="width-100" src="../assets/images/react.png" alt="React" /></span>
                                                         <div className="slice">
@@ -133,6 +143,16 @@ export default function About() {
                                                     <h6 className="open-sans-font text-center">MongooseJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
+                                                    <div className="c100 p70" >
+                                                        <span><img className="width-75" src="../assets/images/bootstrap.png" alt="Bootstrap" /></span>
+                                                        <div className="slice">
+                                                            <div className="bar"></div>
+                                                            <div className="fill"></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 className="open-sans-font text-center">Bootstrap</h6>
+                                                </Col>
+                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div className="c100 p80" >
                                                         <span><img className="width-75" src="../assets/images/react-bootstrap.png" alt="React Bootstrap" /></span>
                                                         <div className="slice">
@@ -152,16 +172,7 @@ export default function About() {
                                                     </div>
                                                     <h6 className="open-sans-font text-center">PostgreSQL</h6>
                                                 </Col>
-                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div className="c100 p35" >
-                                                        <span><img className="width-55" src="../assets/images/typescript.png" alt="TypeScript" /></span>
-                                                        <div className="slice">
-                                                            <div className="bar"></div>
-                                                            <div className="fill"></div>
-                                                        </div>
-                                                    </div>
-                                                    <h6 className="open-sans-font text-center">TypeScript</h6>
-                                                </Col>
+                                                
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div className="c100 p45" >
                                                         <span><img className="width-55" src="../assets/images/redux.png" alt="Redux" /></span>
@@ -172,18 +183,9 @@ export default function About() {
                                                     </div>
                                                     <h6 className="open-sans-font text-center">Redux</h6>
                                                 </Col>
+                                                
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div className="c100 p70" >
-                                                        <span><img className="width-75" src="../assets/images/bootstrap.png" alt="Bootstrap" /></span>
-                                                        <div className="slice">
-                                                            <div className="bar"></div>
-                                                            <div className="fill"></div>
-                                                        </div>
-                                                    </div>
-                                                    <h6 className="open-sans-font text-center">Bootstrap</h6>
-                                                </Col>
-                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
-                                                    <div className="c100 p65" >
+                                                    <div className="c100 p60" >
                                                         <span><img className="width-70" src="../assets/images/git.png" alt="Git" /></span>
                                                         <div className="slice">
                                                             <div className="bar"></div>
@@ -191,6 +193,17 @@ export default function About() {
                                                         </div>
                                                     </div>
                                                     <h6 className="open-sans-font text-center">Git</h6>
+                                                </Col>
+                                                
+                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
+                                                    <div className="c100 p65" >
+                                                        <span><img className="width-60" src="../assets/images/github.png" alt="GitHub" /></span>
+                                                        <div className="slice">
+                                                            <div className="bar"></div>
+                                                            <div className="fill"></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 className="open-sans-font text-center">GitHub</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div className="c100 p45" >
@@ -231,6 +244,16 @@ export default function About() {
                                                         </div>
                                                     </div>
                                                     <h6 className="open-sans-font text-center">Data Structure</h6>
+                                                </Col>
+                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
+                                                    <div className="c100 p70" >
+                                                        <span><img className="width-60" src="../assets/images/vscode.png" alt="VSCode" /></span>
+                                                        <div className="slice">
+                                                            <div className="bar"></div>
+                                                            <div className="fill"></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 className="open-sans-font text-center">VSCode</h6>
                                                 </Col>
                                             </Row>
                                         </Container>
