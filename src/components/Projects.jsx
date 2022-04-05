@@ -22,7 +22,11 @@ export default function Projects() {
                             <div><b><HiCode className="mb-1" /> Codes:</b>{' '}
                                 <a href="https://github.com/MSajedian/Topedu-Reactjs" target="_blank" rel="noreferrer">Topedu-Reactjs</a> / <a href="https://github.com/MSajedian/Topedu-Expressjs" target="_blank" rel="noreferrer">Topedu-Expressjs</a>
                             </div>
-                            <div><b><IoIosApps className="mb-1" /> Tech:</b> MongoDB, ExpressJS, ReactJS, NodeJS</div>
+                            <div><b><IoIosApps className="mb-1" /> Tech:</b> 
+                            <span><img className="icons icons-width" src="../assets/images/react.png" alt="ReactJS" /></span>ReactJS,{" "}
+                            <span><img className="icons icons-width" src="../assets/images/nodejs.png" alt="NodeJS" /></span> NodeJS,{" "}
+                            <span><img className="icons" src="../assets/images/expressjs.png" alt="ExpressJS" /></span> ExpressJS,{" "}
+                            <span><img className="icons" src="../assets/images/mongodb.png" alt="MongoDB" /></span> MongoDB</div>
                             <hr />
                             <div className="description-par-1">TopEdu is a learning management system. In this web application, instructors can create their courses and learners can use these courses. Not only We can store our data as Text or Image in TopEdu but also We can execute our HTML, CSS and JavaScript codes in this web application.</div>
                         </Card.Body>
@@ -42,7 +46,13 @@ export default function Projects() {
                             <div><b><HiCode className="mb-1" /> Codes:</b>{' '}
                                 <a href="https://github.com/MSajedian/whatsapp-clone-fe" target="_blank" rel="noreferrer">Whatsapp-Clone-FE</a> / <a href="https://github.com/MSajedian/whatsapp-clone-be" target="_blank" rel="noreferrer">Whatsapp-Clone-BE</a>
                             </div>
-                            <div><b><IoIosApps className="mb-1" /> Tech:</b> ReactJS, NodeJS, Socket.IO, ExpressJS, MongoDB</div>
+                            <div><b><IoIosApps className="mb-1" /> Tech:</b> 
+                            <span><img className="icons icons-width" src="../assets/images/react.png" alt="ReactJS" /></span>ReactJS,{" "}
+                            <span><img className="icons icons-width" src="../assets/images/nodejs.png" alt="NodeJS" /></span> NodeJS,{" "}
+                            <span><img className="icons" src="../assets/images/socket_io.png" alt="Socket.IO" /></span> Socket.IO,{" "}
+                            <span><img className="icons" src="../assets/images/expressjs.png" alt="ExpressJS" /></span> ExpressJS,{" "}
+                            <span><img className="icons" src="../assets/images/mongodb.png" alt="MongoDB" /></span> MongoDB</div>
+                            {/* <div><b><IoIosApps className="mb-1" /> Tech:</b> ReactJS, NodeJS, Socket.IO, ExpressJS, MongoDB</div> */}
                             <hr />
                             <div className="description-par-1">
                                 WhatsApp Messenger, or simply WhatsApp allows users to send text messages and emojis to each other. Users also able to change their usernames and pictures.

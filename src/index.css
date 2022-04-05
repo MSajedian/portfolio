@@ -231,6 +231,19 @@ code {
   height: 16rem;
 }
 
+.icons {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icons-width {
+  width: 2rem;
+}
+
+.icons-heigth {
+  height: 2rem;
+}
+
 .image-container {
   position: relative;
 }
