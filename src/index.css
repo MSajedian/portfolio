@@ -146,7 +146,14 @@ td {
 
 .customColors-1 {
   color: rgb(255, 255, 255);
-  background-color: #31ff00b3;
+  /* background-color: #31ff00b3; */
+  /* background-color: #85FFBD; */
+  /* background-image: linear-gradient(180deg, hsl(140, 80%, 50%) 40%, hsl(58, 100%, 75%) 100%); */
+  /* background-color: #00DBDE; */
+background-image: linear-gradient(0deg, #000000 0%,hsla(0, 0%, 0%, 0.65) 45%, hsl(181, 100%, 44%) 90%);
+
+  
+
 }
 
 code {

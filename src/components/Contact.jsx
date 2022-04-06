@@ -75,8 +75,8 @@ export default function Contact() {
                 <Col>
                     <div className="customColors-1 contact-card rounded-circle d-inline-flex flex-column flex-nowrap align-items-center pt-4 border border-3 border-success" >
                         <div className="fs-1"><FiMail /></div>
-                        <div className="fs-1">Email</div>
-                        <div className="text-center"><a href="mailto:mohammadsajedian@gmail.com" target="_blank" rel="noreferrer">mohammadsajedian@gmail.com</a></div>
+                        <div className="fs-1">Gmail</div>
+                        <div className="text-center"><a className="fs-5" href="mailto:mohammadsajedian@gmail.com" target="_blank" rel="noreferrer">mohammadsajedian</a></div>
                     </div>
                 </Col>
                 <Col>
