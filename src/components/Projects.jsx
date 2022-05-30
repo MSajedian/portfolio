@@ -34,6 +34,33 @@ export default function Projects() {
                 </Col>
                 <Col>
                     <Card className="text-center mb-4 shadow-lg">
+                        <Card.Img variant="top" src="../assets/images/london-dry-cleaning-company.jpg" />
+                        <Card.Body>
+                            <Card.Title>London Dry Cleaning Company</Card.Title>
+                            {/* <div><b><BsInfoCircle className="mb-1"/> About:</b>{' '}
+                                <a href="https://www.youtube.com/watch?v=i4ehaW-nXZI&list=PLIz8i-HCdhvkycvUn6IYZnCMiM1C3wMPS&index=18" target="_blank" rel="noreferrer">Video</a>
+                            </div> */}
+                            <div><b><HiOutlineExternalLink className="mb-1" /> Demo:</b>{' '}
+                                <a href="https://londondrycleaningcompany-project.vercel.app/" target="_blank" rel="noreferrer">London Dry Cleaning Company - Clone</a>
+                            </div>
+                            <div><b><HiCode className="mb-1" /> Codes:</b>{' '}
+                                <a href="https://github.com/MSajedian/londondrycleaningcompany-project" target="_blank" rel="noreferrer">London Dry Cleaning Company - Clone</a>
+                            </div>
+                            <div><b><IoIosApps className="mb-1" /> Tech: </b> 
+                            <span><img className="icons" src="../assets/images/next-js.png" alt="next-js" /></span> NextJS, {" "}
+                            <span><img className="icons icons-width" src="../assets/images/nodejs.png" alt="NodeJS" /></span> NodeJS,{" "}
+                            <span><img className="icons" src="../assets/images/react-bootstrap.png" alt="React-Bootstrap" /></span> React-Bootstrap{" "}
+                            </div>
+                            {/* <div><b><IoIosApps className="mb-1" /> Tech:</b> ReactJS, NodeJS, Socket.IO, ExpressJS, MongoDB</div> */}
+                            <hr />
+                            <div className="description-par-1">
+                                This is the clone version of londondrycleaningcompany.com with NextJS
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card className="text-center mb-4 shadow-lg">
                         <Card.Img variant="top" src="../assets/images/whatsapp.jpg" />
                         <Card.Body>
                             <Card.Title>Whatsapp-Clone</Card.Title>
@@ -60,6 +87,7 @@ export default function Projects() {
                         </Card.Body>
                     </Card>
                 </Col>
+                
             </Row>
         </Container>
     )

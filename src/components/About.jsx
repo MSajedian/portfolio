@@ -11,9 +11,7 @@ export default function About() {
                     </div> */}
             <Row className="mt-3">
                 <Col lg={6} md={6} className="mb-5 px-5 ">
-                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b>, I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran and currently living in London.
-                        I have a master's degree in Eletrical Engineering (Electronics) and was working as an eletrical engineer for several years.
-                        I have always been interested in coding so from 2021, I took part in full-stack web developer course in strive school to pursue my dreams of becoming a web developer.
+                    <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b>, I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran. After 12+ years of education and experience as an Electrical Engineer in my home country, I moved to the UK to evolve my life. My passion for coding and the will to get new challenges made me enrol in and complete a full-time web development course. I am strongly motivated to pursue a career as a developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
                         <Button href="https://drive.google.com/file/d/1utyXmvCJNBea6wS_EiVCxzxJNNvl9L_X/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
@@ -100,7 +98,17 @@ export default function About() {
                                                             <div className="fill"></div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="open-sans-font text-center">React</h6>
+                                                    <h6 className="open-sans-font text-center">ReactJS</h6>
+                                                </Col>
+                                                <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
+                                                    <div className="c100 p70" >
+                                                        <span><img className="width-70" src="../assets/images/next-js.png" alt="next-js" /></span>
+                                                        <div className="slice">
+                                                            <div className="bar"></div>
+                                                            <div className="fill"></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 className="open-sans-font text-center">NextJS</h6>
                                                 </Col>
                                                 <Col className="d-flex flex-column flex-nowrap align-items-center mb-1">
                                                     <div className="c100 p55" >
