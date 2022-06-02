@@ -14,7 +14,7 @@ export default function About() {
                     <p className="about-par-1 customBackground-1 rounded p-3 shadow">My name is <b>Mohammadamin Sajedian</b>, I'm a <b>full-Stack Web Developer</b>. I'm originally from Shiraz, Iran. After 12+ years of education and experience as an Electrical Engineer in my home country, I moved to the UK to evolve my life. My passion for coding and the will to get new challenges made me enrol in and complete a full-time web development course. I am strongly motivated to pursue a career as a developer.
                     </p>
                     <div className="d-flex justify-content-center align-items-center mb-4">
-                        <Button href="https://drive.google.com/file/d/1utyXmvCJNBea6wS_EiVCxzxJNNvl9L_X/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
+                        <Button href="https://drive.google.com/file/d/11cxCuwE40Kp8Oct8urDQr86030z4_jPv/view" variant="success" className="shadow btn-grad" target="_blank">Download CV</Button>
                     </div>            
                     <div className="text-center mt-4"><Image roundedCircle src="../assets/images/mohammadamin-sajedian.jpg" alt="mohammadamin-sajedian" width="500" height="500" className="img-fluid shadow-lg" /></div>
                 </Col>
